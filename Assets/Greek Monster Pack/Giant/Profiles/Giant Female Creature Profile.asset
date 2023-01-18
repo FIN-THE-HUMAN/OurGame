@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a654b7f843f84eb4a9de65078d56c73f, type: 3}
+  m_Name: Giant Female Creature Profile
+  m_EditorClassIdentifier: 
+  creatureGender: 1
+  meshMaterialIndex: 0
+  eyeMaterialIndex: 1
+  handleSkinTonesSeperately: 0
+  skinTones: 1
+  headHairOffset: {x: 0, y: 0.005, z: -0.018}
+  chestHairOffset: {x: 0, y: 0.005, z: -0.018}
+  usableMaterials:
+  - name: Skin Tone 01
+    material: {fileID: 2100000, guid: dd25d00995b66664fbfedbe027c2663e, type: 2}
+    skinTone: 0
+  - name: Skin Tone 02
+    material: {fileID: 2100000, guid: 20ec1a39bace00443afcfaf23eeef9b1, type: 2}
+    skinTone: 0
+  - name: Skin Tone 03
+    material: {fileID: 2100000, guid: 89cb68fffb9cb9e4ea10eb17fe3d33a2, type: 2}
+    skinTone: 0
+  - name: Skin Tone 04
+    material: {fileID: 2100000, guid: 1abe07812c2c31d428d147d0ae686c94, type: 2}
+    skinTone: 0
+  - name: Skin Tone 05
+    material: {fileID: 2100000, guid: eeafd6aa5cfc40d4c8fd8972f40516fe, type: 2}
+    skinTone: 0
+  armaturePath:
+  - Human_Female_Armature
+  - HipController
+  - Hips
+  - spine.001
+  - spine.002
+  - spine.003
+  - Neck
+  - Head
+  baseBoneName: spine.003

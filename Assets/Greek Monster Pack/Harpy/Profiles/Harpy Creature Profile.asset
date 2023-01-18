@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a654b7f843f84eb4a9de65078d56c73f, type: 3}
+  m_Name: Harpy Creature Profile
+  m_EditorClassIdentifier: 
+  creatureGender: 1
+  meshMaterialIndex: 0
+  eyeMaterialIndex: 1
+  handleSkinTonesSeperately: 0
+  skinTones: 3
+  headHairOffset: {x: 0, y: 0.005, z: -0.013}
+  chestHairOffset: {x: 0, y: 0.005, z: -0.02}
+  usableMaterials:
+  - name: Grey White
+    material: {fileID: 2100000, guid: c7fc0cf1689fecc409c99094a63f1acc, type: 2}
+    skinTone: 0
+  - name: Grey White
+    material: {fileID: 2100000, guid: dc27e262c0b028041bd2ce11067e7bd4, type: 2}
+    skinTone: 1
+  - name: Grey White
+    material: {fileID: 2100000, guid: 8c02dd795504a824ab0384de4e188d6d, type: 2}
+    skinTone: 2
+  - name: Raven-Blue
+    material: {fileID: 2100000, guid: 546f2b7b1eb237d4db9fdff2c17a8908, type: 2}
+    skinTone: 0
+  - name: Raven-Blue
+    material: {fileID: 2100000, guid: e62d0e36af9683a478574c12ac856748, type: 2}
+    skinTone: 1
+  - name: Raven-Blue
+    material: {fileID: 2100000, guid: e41bd8152ec0ef8469ddce54153523bd, type: 2}
+    skinTone: 2
+  - name: White
+    material: {fileID: 2100000, guid: abd566867373cc54e9096b0c8d4c02b5, type: 2}
+    skinTone: 0
+  - name: White
+    material: {fileID: 2100000, guid: 753af197f7c2d1b459deb032e314eb22, type: 2}
+    skinTone: 1
+  - name: White
+    material: {fileID: 2100000, guid: ebff18a6b0a2d6b4682a1390810b0c8f, type: 2}
+    skinTone: 2
+  - name: Black White
+    material: {fileID: 2100000, guid: 764eec1702675cb4bae2c9fb3c37d550, type: 2}
+    skinTone: 0
+  - name: Black White
+    material: {fileID: 2100000, guid: 4d690c2b6f6cdcd45b40ec82c5c8df4c, type: 2}
+    skinTone: 1
+  - name: Black White
+    material: {fileID: 2100000, guid: 2ffb6534979024e43bf88a522d3e14fb, type: 2}
+    skinTone: 2
+  - name: White Black
+    material: {fileID: 2100000, guid: 3721a33b32d8acf4c959079c615b5464, type: 2}
+    skinTone: 0
+  - name: White Black
+    material: {fileID: 2100000, guid: 1f2d275917c86ca428ddb1dd80a5da9f, type: 2}
+    skinTone: 1
+  - name: White Black
+    material: {fileID: 2100000, guid: d954cb00d8511e64c91f6d4d0f86c059, type: 2}
+    skinTone: 2
+  - name: Tropical Red
+    material: {fileID: 2100000, guid: 0c32f2a679926f540a827c0096d0f6b7, type: 2}
+    skinTone: 0
+  - name: Tropical Red
+    material: {fileID: 2100000, guid: 947265062993a504c9b0b238dc16135e, type: 2}
+    skinTone: 1
+  - name: Tropical Red
+    material: {fileID: 2100000, guid: e4def09ea0b80a847bd7340370d78f38, type: 2}
+    skinTone: 2
+  - name: Tropical Blue
+    material: {fileID: 2100000, guid: 842c1320966018a4fba07493edb5cf89, type: 2}
+    skinTone: 0
+  - name: Tropical Blue
+    material: {fileID: 2100000, guid: a583350c7a3b9844eb6a3bcc0e8b3a9a, type: 2}
+    skinTone: 1
+  - name: Tropical Blue
+    material: {fileID: 2100000, guid: 8ce81711215222f4ca7fcbaa6e43e227, type: 2}
+    skinTone: 2
+  - name: Tropical Yellow
+    material: {fileID: 2100000, guid: a7b9f20c5b093a84a89b17cff9b41ae7, type: 2}
+    skinTone: 0
+  - name: Tropical Yellow
+    material: {fileID: 2100000, guid: 40ddc2df2bc7b5e4f937822a1c610ef5, type: 2}
+    skinTone: 1
+  - name: Tropical Yellow
+    material: {fileID: 2100000, guid: bb2243c30b804e2479afd754ece945a9, type: 2}
+    skinTone: 2
+  - name: Tropical Green
+    material: {fileID: 2100000, guid: 4e5d03f730b78cb4dae996c1581010ce, type: 2}
+    skinTone: 0
+  - name: Tropical Green
+    material: {fileID: 2100000, guid: 753d3a766b338db498115b07d8cf8a2b, type: 2}
+    skinTone: 1
+  - name: Tropical Green
+    material: {fileID: 2100000, guid: c113d29291e8b234a9392f4ef1adee62, type: 2}
+    skinTone: 2
+  - name: Tropical Blue Pink
+    material: {fileID: 2100000, guid: 8e14e3bfa6505a648b062789ba2cee5a, type: 2}
+    skinTone: 0
+  - name: Tropical Blue Pink
+    material: {fileID: 2100000, guid: f7acf88b56a1dd6489aeca63d0cfdabd, type: 2}
+    skinTone: 1
+  - name: Tropical Blue Pink
+    material: {fileID: 2100000, guid: 507632885a549c347b9f245e3911925b, type: 2}
+    skinTone: 2
+  - name: Blood Red
+    material: {fileID: 2100000, guid: e4f0e0a3b79cec24188a31d7d1365522, type: 2}
+    skinTone: 0
+  - name: Blood Red
+    material: {fileID: 2100000, guid: 0095426f5eb3ca74eae5d70742ce26e4, type: 2}
+    skinTone: 1
+  - name: Blood Red
+    material: {fileID: 2100000, guid: a00167b76b5b64b44b45fa1aae96e1d1, type: 2}
+    skinTone: 2
+  - name: Brown Hues
+    material: {fileID: 2100000, guid: 117793efbbc085e4c99e5a36ec4329e6, type: 2}
+    skinTone: 0
+  - name: Brown Hues
+    material: {fileID: 2100000, guid: 9693a3e987a50fe4d901192f111dfe94, type: 2}
+    skinTone: 1
+  - name: Brown Hues
+    material: {fileID: 2100000, guid: 2765c11fca1229a428b256f95093b324, type: 2}
+    skinTone: 2
+  - name: Brown
+    material: {fileID: 2100000, guid: 3a9a062d498a42e47abfffbc634c0afb, type: 2}
+    skinTone: 0
+  - name: Brown
+    material: {fileID: 2100000, guid: 4b8556806c35595468f46cad0e7b0231, type: 2}
+    skinTone: 1
+  - name: Brown
+    material: {fileID: 2100000, guid: 56c7246976b65564c835da37a5d4331b, type: 2}
+    skinTone: 2
+  - name: BrownWhite
+    material: {fileID: 2100000, guid: f86985e6414dd0c45b72605db8138875, type: 2}
+    skinTone: 0
+  - name: BrownWhite
+    material: {fileID: 2100000, guid: b10350cb73bf82f4e9de7f2f0e6c0d87, type: 2}
+    skinTone: 1
+  - name: BrownWhite
+    material: {fileID: 2100000, guid: 3030dc7f7508301469b342047cfcc74c, type: 2}
+    skinTone: 2
+  armaturePath:
+  - Human_Female_Armature
+  - HipController
+  - Hips
+  - spine.001
+  - spine.002
+  - spine.003
+  - Neck
+  - Head
+  baseBoneName: spine.003

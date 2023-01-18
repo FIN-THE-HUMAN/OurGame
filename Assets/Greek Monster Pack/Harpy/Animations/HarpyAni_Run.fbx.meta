@@ -1,0 +1,1416 @@
+fileFormatVersion: 2
+guid: c7e95cd454cde3a4aa2899973adf41ae
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -4358349696107003698
+    second: Harpy_Run
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: Human_Female_Armature/HipController
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Human_Female_Armature|Harpy_Run' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'shoulder.R' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'shoulder.L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Harpy_Run
+      takeName: Human_Female_Armature|Harpy_Run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Human_Female_Armature
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.l
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.l/UpperLegMCH.l
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.l/UpperLegMCH.l/UpperLegMCH.l_end
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.r
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.r/UpperLegMCH.r
+        weight: 1
+      - path: Human_Female_Armature/FootIkBind.r/UpperLegMCH.r/UpperLegMCH.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController
+        weight: 1
+      - path: Human_Female_Armature/HipController/HeadLookAtTarget
+        weight: 1
+      - path: Human_Female_Armature/HipController/HeadLookAtTarget/HeadLookAtTarget_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Butt.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Butt.l/Butt.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Butt.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Butt.r/Butt.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.l/falseshin.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.l/falseshin.l/falsefoot.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.l/falseshin.l/falsefoot.l/falsefoot.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.r/falseshin.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.r/falseshin.r/falsefoot.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/falsethigh.r/falseshin.r/falsefoot.r/falsefoot.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.l/AnkleMCH.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.l/AnkleMCH.l/AnkleMCH.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.r/AnkleMCH.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/footpad.r/AnkleMCH.r/AnkleMCH.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/legiktarget.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/legiktarget.l/legiktarget.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/legiktarget.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/legiktarget.r/legiktarget.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Lowerlegiktarget.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Lowerlegiktarget.l/Lowerlegiktarget.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Lowerlegiktarget.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/Lowerlegiktarget.r/Lowerlegiktarget.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Breast.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Breast.L/Breast.L_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Breast.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Breast.R/Breast.R_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Neck
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Neck/Head
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/Neck/Head/Head_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Hand.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Hand.L/Wing.04.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Hand.L/Wing.04.l/Wing.04.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Hand.L/Wing.05.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Hand.L/Wing.05.l/Wing.05.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Wing.03.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/forearm.L/Wing.03.l/Wing.03.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/Wing.01.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/Wing.01.l/Wing.01.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/Wing.02.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/upper_arm.L/Wing.02.l/Wing.02.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingJointMCH.001.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingJointMCH.001.l/WingJointMCH.001.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingJointMCH.005.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingJointMCH.005.l/WingJointMCH.005.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l/WingJointMCH.003.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l/WingJointMCH.003.l/WingJointMCH.003.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l/WingMCH.004.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l/WingMCH.004.l/WingJointMCH.004.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.L/WingMCH.001.l/WingMCH.002.l/WingMCH.003.l/WingMCH.004.l/WingJointMCH.004.l/WingJointMCH.004.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Hand.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Hand.R/Wing.04.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Hand.R/Wing.04.r/Wing.04.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Hand.R/Wing.05.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Hand.R/Wing.05.r/Wing.05.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Wing.03.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/forearm.R/Wing.03.r/Wing.03.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/Wing.01.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/Wing.01.r/Wing.01.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/Wing.02.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/upper_arm.R/Wing.02.r/Wing.02.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingJointMCH.001.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingJointMCH.001.r/WingJointMCH.001.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingJointMCH.002.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingJointMCH.002.r/WingJointMCH.002.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r/WingMCH.004.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r/WingMCH.004.r/WingJointMCH.004.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r/WingMCH.004.r/WingJointMCH.004.r/WingJointMCH.004.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r/WingMCH.005.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/shoulder.R/WingMCH.001.r/WingMCH.002.r/WingMCH.003.r/WingMCH.005.r/WingMCH.005.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.l/WingMCH.007.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.l/WingMCH.007.l/WingMCH.007.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.r/WingMCH.007.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/spine.001/spine.002/spine.003/WingMCH.006.r/WingMCH.007.r/WingMCH.007.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.001
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.001/Ankle.L.008
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.001/Ankle.L.008/Ankle.L.009
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.001/Ankle.L.008/Ankle.L.009/Ankle.L.009_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.002
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.002/Ankle.L.006
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.002/Ankle.L.006/Ankle.L.007
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.002/Ankle.L.006/Ankle.L.007/Ankle.L.007_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.003
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.003/Ankle.L.004
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.003/Ankle.L.004/Ankle.L.005
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Ankle.L.003/Ankle.L.004/Ankle.L.005/Ankle.L.005_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Hoof.L
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Hoof.L/Hoof.L.001
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Hoof.L/Hoof.L.001/Hoof.L.002
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.L/MiddleLeg.L/Shin.L/Ankle.L/Hoof.L/Hoof.L.001/Hoof.L.002/Hoof.L.002_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.001
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.001/Ankle.R.008
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.001/Ankle.R.008/Ankle.R.009
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.001/Ankle.R.008/Ankle.R.009/Ankle.R.009_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.002
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.002/Ankle.R.006
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.002/Ankle.R.006/Ankle.R.007
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.002/Ankle.R.006/Ankle.R.007/Ankle.R.007_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.003
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.003/Ankle.R.004
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.003/Ankle.R.004/Ankle.R.005
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Ankle.R.003/Ankle.R.004/Ankle.R.005/Ankle.R.005_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Hoof.R
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Hoof.R/Hoof.R.001
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Hoof.R/Hoof.R.001/Hoof.R.002
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/thigh.R/MiddleLeg.R/Shin.R/Ankle.R/Hoof.R/Hoof.R.001/Hoof.R.002/Hoof.R.002_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperBodyRotation
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperBodyRotation/UpperBodyRotation_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperHips.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperHips.l/UpperHips.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperHips.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/Hips/UpperHips.r/UpperHips.r_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/UpperLegIkBind.l
+        weight: 1
+      - path: Human_Female_Armature/HipController/UpperLegIkBind.l/UpperLegIkBind.l_end
+        weight: 1
+      - path: Human_Female_Armature/HipController/UpperLegIkBind.r
+        weight: 1
+      - path: Human_Female_Armature/HipController/UpperLegIkBind.r/UpperLegIkBind.r_end
+        weight: 1
+      - path: Human_Female_Armature/WingController.l
+        weight: 1
+      - path: Human_Female_Armature/WingController.l/WingController.l_end
+        weight: 1
+      - path: Human_Female_Armature/WingController.r
+        weight: 1
+      - path: Human_Female_Armature/WingController.r/WingController.r_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falsethigh.l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falsethigh.r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falseshin.l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falseshin.r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falsefoot.l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: falsefoot.r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.001
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.002
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.001.l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.001.r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.002.l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.002.r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.003.l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WingMCH.003.r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.003
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Harpy(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Female
+      parentName: Harpy(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Human_Female_Armature
+      parentName: Harpy(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 200, y: 200, z: 200}
+    - name: WingController.l
+      parentName: Human_Female_Armature
+      position: {x: -0.0017959212, y: 0.0003020811, z: 0.017183976}
+      rotation: {x: -0.0066494104, y: 0.0066494104, z: 0.7070755, w: 0.70707554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingController.l_end
+      parentName: WingController.l
+      position: {x: -0, y: 0.0010000002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingController.r
+      parentName: Human_Female_Armature
+      position: {x: 0.0017959212, y: 0.0003020811, z: 0.017183976}
+      rotation: {x: -0.0066494104, y: -0.0066494104, z: -0.7070755, w: 0.70707554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingController.r_end
+      parentName: WingController.r
+      position: {x: -0, y: 0.0010000002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HipController
+      parentName: Human_Female_Armature
+      position: {x: -0, y: 0, z: 9.3132255e-12}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: HipController
+      position: {x: 0, y: 0.010004828, z: 0.00051383395}
+      rotation: {x: -0.17401803, y: 0, z: -0, w: 0.98474246}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: spine.001
+      parentName: Hips
+      position: {x: -0, y: 0.0020011168, z: 1.862645e-10}
+      rotation: {x: 0.23434167, y: 0, z: -0, w: 0.9721543}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: spine.002
+      parentName: spine.001
+      position: {x: -0, y: 0.0013663702, z: 7.9744496e-11}
+      rotation: {x: -0.07994391, y: 0, z: -0, w: 0.99679935}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: spine.003
+      parentName: spine.002
+      position: {x: -0, y: 0.0014951999, z: 2.3283063e-11}
+      rotation: {x: 0.005660707, y: 0, z: -0, w: 0.99998397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: spine.003
+      position: {x: -0, y: 0.0021595103, z: 0}
+      rotation: {x: 0.010770606, y: -5.849834e-17, z: -6.0007665e-17, w: 0.999942}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Head
+      parentName: Neck
+      position: {x: 2.2747467e-26, y: 0.00080206536, z: 4.6566128e-12}
+      rotation: {x: 0.028725028, y: 0.00000011916013, z: 0.0000000034242906, w: 0.99958736}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Head_end
+      parentName: Head
+      position: {x: -0, y: 0.0022905217, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder.R
+      parentName: spine.003
+      position: {x: 0.0003085864, y: 0.0017642541, z: 0.00048300473}
+      rotation: {x: -0.31841725, y: -0.22875316, z: -0.5736259, w: 0.7191911}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: upper_arm.R
+      parentName: shoulder.R
+      position: {x: 0.000005793255, y: 0.0015048273, z: -0.000288755}
+      rotation: {x: 0.05396214, y: 0.41820765, z: -0.12884052, w: 0.89754695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: forearm.R
+      parentName: upper_arm.R
+      position: {x: -4.842877e-10, y: 0.003390689, z: -1.4901161e-10}
+      rotation: {x: 0.008054599, y: -0.0876798, z: 0.048914015, w: 0.99491453}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Hand.R
+      parentName: forearm.R
+      position: {x: 0.0000000022444873, y: 0.004230442, z: 2.6077032e-10}
+      rotation: {x: -0.07971328, y: -0.000000037185888, z: -0.37526777, w: 0.9234825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.05.r
+      parentName: Hand.R
+      position: {x: -0.000000001490116, y: 0.0028375445, z: -5.5879353e-11}
+      rotation: {x: -0.013323411, y: -0.00000008777967, z: -0.13205162, w: 0.9911533}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Wing.05.r_end
+      parentName: Wing.05.r
+      position: {x: -0, y: 0.006699297, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.04.r
+      parentName: Hand.R
+      position: {x: -0.000000001490116, y: 0.0028375445, z: -5.5879353e-11}
+      rotation: {x: -0.05257171, y: 0.00000012529928, z: -0.52105236, w: 0.85190415}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: Wing.04.r_end
+      parentName: Wing.04.r
+      position: {x: -0, y: 0.0050208466, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.03.r
+      parentName: forearm.R
+      position: {x: 0.0000000022444873, y: 0.004230442, z: 2.6077032e-10}
+      rotation: {x: -0.08189108, y: 0.000000041718227, z: -0.8358554, w: 0.5428071}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: Wing.03.r_end
+      parentName: Wing.03.r
+      position: {x: -0, y: 0.0059261736, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.02.r
+      parentName: upper_arm.R
+      position: {x: -4.842877e-10, y: 0.003390689, z: -1.4901161e-10}
+      rotation: {x: 0.08711659, y: -0.016847137, z: -0.42903656, w: 0.8989185}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: Wing.02.r_end
+      parentName: Wing.02.r
+      position: {x: -0, y: 0.0049739988, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.01.r
+      parentName: upper_arm.R
+      position: {x: -4.842877e-10, y: 0.003390689, z: -1.4901161e-10}
+      rotation: {x: 0.03358923, y: -0.040136434, z: -0.71763307, w: 0.69445205}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Wing.01.r_end
+      parentName: Wing.01.r
+      position: {x: -0, y: 0.003492282, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.001.r
+      parentName: shoulder.R
+      position: {x: 6.891787e-10, y: 0.0018019666, z: -8.5681673e-10}
+      rotation: {x: -0.05856732, y: -0.41737396, z: -0.17524846, w: 0.889751}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: WingMCH.002.r
+      parentName: WingMCH.001.r
+      position: {x: 1.862645e-10, y: 0.0026260624, z: 0.0000000018952413}
+      rotation: {x: 0.046332985, y: 0.04673092, z: -0.02159288, w: 0.99759877}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: WingJointMCH.002.r
+      parentName: WingMCH.002.r
+      position: {x: -0.000180769, y: 0.003645162, z: 0.00048823273}
+      rotation: {x: 0.54642135, y: 0.45899957, z: 0.4488026, w: 0.5378841}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: WingJointMCH.002.r_end
+      parentName: WingJointMCH.002.r
+      position: {x: -0, y: 0.0001999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.003.r
+      parentName: WingMCH.002.r
+      position: {x: -3.0267983e-11, y: 0.0036440294, z: 0.0000000019639264}
+      rotation: {x: -0.000000006868503, y: -0.000000010399162, z: 0.0000000024228939, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: WingMCH.005.r
+      parentName: WingMCH.003.r
+      position: {x: -0.0001944005, y: 0.0027445427, z: -0.00023646031}
+      rotation: {x: 0.52893275, y: 0.47915128, z: 0.46928686, w: 0.5200135}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: WingMCH.005.r_end
+      parentName: WingMCH.005.r
+      position: {x: -0, y: 0.0001999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.004.r
+      parentName: WingMCH.003.r
+      position: {x: 1.3969838e-11, y: 0.0027417808, z: 9.872019e-10}
+      rotation: {x: 5.05679e-10, y: 7.812559e-10, z: -1.382432e-10, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: WingJointMCH.004.r
+      parentName: WingMCH.004.r
+      position: {x: -0.00025749806, y: 0.0057947985, z: -0.0035909307}
+      rotation: {x: 0.5289328, y: 0.47915125, z: 0.46928686, w: 0.5200136}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: WingJointMCH.004.r_end
+      parentName: WingJointMCH.004.r
+      position: {x: -0, y: 0.0010000002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingJointMCH.001.r
+      parentName: WingMCH.001.r
+      position: {x: -0.00069125264, y: 0.002798462, z: -0.0015578879}
+      rotation: {x: 0.4950261, y: 0.54658365, z: 0.5500328, w: 0.39199418}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+    - name: WingJointMCH.001.r_end
+      parentName: WingJointMCH.001.r
+      position: {x: -0, y: 0.00064999936, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder.L
+      parentName: spine.003
+      position: {x: -0.0003085864, y: 0.0017642541, z: 0.00048300473}
+      rotation: {x: -0.30924892, y: 0.21878284, z: 0.57907856, w: 0.72191906}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: upper_arm.L
+      parentName: shoulder.L
+      position: {x: -0.000005792025, y: 0.0015048275, z: -0.00028875566}
+      rotation: {x: 0.0552198, y: -0.4181102, z: 0.12546457, w: 0.89799404}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: forearm.L
+      parentName: upper_arm.L
+      position: {x: -0.0000000021388404, y: 0.0033906894, z: -3.7252902e-11}
+      rotation: {x: 0.007990227, y: 0.08768872, z: -0.04873064, w: 0.99492323}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: Hand.L
+      parentName: forearm.L
+      position: {x: 0.0000000012759119, y: 0.0042304434, z: -7.4505804e-11}
+      rotation: {x: -0.07971329, y: 0.000000041282753, z: 0.37526777, w: 0.9234825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.05.l
+      parentName: Hand.L
+      position: {x: -4.4703483e-10, y: 0.0028375452, z: -9.313225e-11}
+      rotation: {x: -0.013323414, y: 0.00000008305069, z: 0.13205163, w: 0.9911533}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.05.l_end
+      parentName: Wing.05.l
+      position: {x: -0, y: 0.006699297, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.04.l
+      parentName: Hand.L
+      position: {x: -4.4703483e-10, y: 0.0028375452, z: -9.313225e-11}
+      rotation: {x: -0.05257171, y: -0.00000012882954, z: 0.52105236, w: 0.85190415}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Wing.04.l_end
+      parentName: Wing.04.l
+      position: {x: -0, y: 0.0050208466, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.03.l
+      parentName: forearm.L
+      position: {x: 0.0000000012759119, y: 0.0042304434, z: -7.4505804e-11}
+      rotation: {x: -0.081891075, y: -0.000000053795787, z: 0.8358555, w: 0.54280704}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Wing.03.l_end
+      parentName: Wing.03.l
+      position: {x: -0, y: 0.0059261736, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.02.l
+      parentName: upper_arm.L
+      position: {x: -0.0000000021388404, y: 0.0033906894, z: -3.7252902e-11}
+      rotation: {x: 0.0871166, y: 0.016847124, z: 0.4290366, w: 0.8989185}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Wing.02.l_end
+      parentName: Wing.02.l
+      position: {x: -0, y: 0.0049739988, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wing.01.l
+      parentName: upper_arm.L
+      position: {x: -0.0000000021388404, y: 0.0033906894, z: -3.7252902e-11}
+      rotation: {x: 0.033589218, y: 0.040136434, z: 0.71763307, w: 0.69445205}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Wing.01.l_end
+      parentName: Wing.01.l
+      position: {x: -0, y: 0.003492282, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.001.l
+      parentName: shoulder.L
+      position: {x: -5.5879353e-11, y: 0.001801967, z: -6.61239e-10}
+      rotation: {x: -0.058567327, y: 0.41737399, z: 0.17524847, w: 0.889751}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: WingMCH.002.l
+      parentName: WingMCH.001.l
+      position: {x: 1.3038516e-10, y: 0.0026260624, z: -6.2864275e-10}
+      rotation: {x: 0.04633299, y: -0.04673091, z: 0.021592878, w: 0.99759877}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: WingJointMCH.005.l
+      parentName: WingMCH.002.l
+      position: {x: 0.000180769, y: 0.003645162, z: 0.0004882308}
+      rotation: {x: 0.54642135, y: -0.45899948, z: -0.4488025, w: 0.5378843}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: WingJointMCH.005.l_end
+      parentName: WingJointMCH.005.l
+      position: {x: -0, y: 0.0001999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.003.l
+      parentName: WingMCH.002.l
+      position: {x: 3.1286616e-12, y: 0.0036440291, z: 9.428186e-10}
+      rotation: {x: -0.0000000074062143, y: 0.000000010241781, z: -0.0000000024670044, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingJointMCH.003.l
+      parentName: WingMCH.003.l
+      position: {x: 0.00019440049, y: 0.0027445431, z: -0.0002364619}
+      rotation: {x: 0.5289328, y: -0.47915125, z: -0.46928686, w: 0.5200136}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: WingJointMCH.003.l_end
+      parentName: WingJointMCH.003.l
+      position: {x: -0, y: 0.0001999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.004.l
+      parentName: WingMCH.003.l
+      position: {x: -1.3460521e-11, y: 0.002741782, z: 0.0000000010367511}
+      rotation: {x: -5.8264504e-13, y: -9.340548e-10, z: 2.3874236e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingJointMCH.004.l
+      parentName: WingMCH.004.l
+      position: {x: 0.00025749803, y: 0.005794796, z: -0.0035909307}
+      rotation: {x: 0.52893275, y: -0.4791512, z: -0.46928683, w: 0.52001363}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: WingJointMCH.004.l_end
+      parentName: WingJointMCH.004.l
+      position: {x: -0, y: 0.0010000002, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingJointMCH.001.l
+      parentName: WingMCH.001.l
+      position: {x: 0.00069125294, y: 0.002798462, z: -0.0015578901}
+      rotation: {x: -0.49502617, y: 0.54658365, z: 0.5500328, w: -0.39199412}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999999}
+    - name: WingJointMCH.001.l_end
+      parentName: WingJointMCH.001.l
+      position: {x: -0, y: 0.00064999936, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Breast.R
+      parentName: spine.003
+      position: {x: 0.0005165637, y: 0.0015006845, z: 0.00067931256}
+      rotation: {x: 0.87978107, y: 0.09860488, z: 0.46367285, w: 0.03563436}
+      scale: {x: 1.0000011, y: 1, z: 1.0000013}
+    - name: Breast.R_end
+      parentName: Breast.R
+      position: {x: -0, y: 0.0018494776, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Breast.L
+      parentName: spine.003
+      position: {x: -0.0005165637, y: 0.0015006845, z: 0.00067931256}
+      rotation: {x: 0.87978107, y: -0.09860488, z: -0.46367285, w: 0.03563436}
+      scale: {x: 1.0000011, y: 1, z: 1.0000013}
+    - name: Breast.L_end
+      parentName: Breast.L
+      position: {x: -0, y: 0.0018494776, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.006.l
+      parentName: spine.003
+      position: {x: -0.00033115147, y: 0.0017664037, z: -0.00019815733}
+      rotation: {x: -0.49359247, y: 0.493591, z: 0.5063279, w: 0.5063264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.007.l
+      parentName: WingMCH.006.l
+      position: {x: -0.00020522099, y: 0.0013499999, z: 0.00020522118}
+      rotation: {x: 0.6535702, y: 0.26990014, z: 0.26990005, w: 0.6535701}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.007.l_end
+      parentName: WingMCH.007.l
+      position: {x: -0, y: 0.00034999967, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.006.r
+      parentName: spine.003
+      position: {x: 0.00033115147, y: 0.0017664037, z: -0.00019815733}
+      rotation: {x: -0.49359247, y: -0.493591, z: -0.5063279, w: 0.5063264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.007.r
+      parentName: WingMCH.006.r
+      position: {x: 0.00020522099, y: 0.0013499999, z: 0.00020522118}
+      rotation: {x: 0.6535702, y: -0.26990014, z: -0.26990005, w: 0.6535701}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WingMCH.007.r_end
+      parentName: WingMCH.007.r
+      position: {x: -0, y: 0.00034999967, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperHips.l
+      parentName: Hips
+      position: {x: -0, y: 0.0020011168, z: 1.862645e-10}
+      rotation: {x: -0.37038994, y: 0.25529167, z: 0.8046049, w: 0.38761893}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: UpperHips.l_end
+      parentName: UpperHips.l
+      position: {x: -0, y: 0.0019920536, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperHips.r
+      parentName: Hips
+      position: {x: -0, y: 0.0020011168, z: 1.862645e-10}
+      rotation: {x: 0.37038994, y: 0.25529167, z: 0.8046049, w: -0.38761893}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: UpperHips.r_end
+      parentName: UpperHips.r
+      position: {x: -0, y: 0.0019920536, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thigh.R
+      parentName: Hips
+      position: {x: 0.0013226706, y: 0.0002877437, z: -0.0004533224}
+      rotation: {x: 0.9973758, y: -0.038819015, z: 0.0044018966, w: -0.060952988}
+      scale: {x: 0.99999976, y: 1.0000001, z: 0.9999991}
+    - name: MiddleLeg.R
+      parentName: thigh.R
+      position: {x: 4.6275088e-11, y: 0.0029509992, z: 1.3948011e-10}
+      rotation: {x: 0.4343265, y: 0.0005955699, z: -0.039814126, w: 0.899875}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Shin.R
+      parentName: MiddleLeg.R
+      position: {x: -6.519258e-11, y: 0.0030816116, z: -9.3132255e-12}
+      rotation: {x: -0.40718517, y: -0.000980225, z: -0.02514026, w: 0.91299903}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Ankle.R
+      parentName: Shin.R
+      position: {x: -9.3132255e-12, y: 0.0036752706, z: 6.0535965e-11}
+      rotation: {x: -0.15671964, y: -0.062214177, z: 0.00021510196, w: 0.9856817}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Hoof.R
+      parentName: Ankle.R
+      position: {x: -7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: 0.8078964, y: -0.02626551, z: 0.021653112, w: 0.58834076}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Hoof.R.001
+      parentName: Hoof.R
+      position: {x: 1.1335942e-10, y: 0.0009236631, z: 7.130438e-12}
+      rotation: {x: 0.088232204, y: 0.00086924294, z: 0.00024244493, w: 0.99609953}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Hoof.R.002
+      parentName: Hoof.R.001
+      position: {x: -3.565437e-11, y: 0.0010304757, z: -3.201166e-12}
+      rotation: {x: -0.11634226, y: 0.0000000016454993, z: -0.00042121517, w: 0.9932091}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hoof.R.002_end
+      parentName: Hoof.R.002
+      position: {x: -0, y: 0.001317335, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.R.001
+      parentName: Ankle.R
+      position: {x: -7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: -0.20766039, y: 0.8767537, z: -0.4071261, w: -0.1497615}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: Ankle.R.008
+      parentName: Ankle.R.001
+      position: {x: 4.631147e-11, y: 0.0008027616, z: -4.4237822e-11}
+      rotation: {x: 0.061804812, y: -0.04021169, z: 0.2538634, w: 0.96442556}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999998}
+    - name: Ankle.R.009
+      parentName: Ankle.R.008
+      position: {x: 1.7680576e-11, y: 0.0011816178, z: -1.0186341e-12}
+      rotation: {x: -0.104551, y: 0.008052924, z: -0.047963746, w: 0.99332964}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Ankle.R.009_end
+      parentName: Ankle.R.009
+      position: {x: -0, y: 0.0011879574, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.R.002
+      parentName: Ankle.R
+      position: {x: -7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: 0.09701756, y: 0.8834219, z: -0.45223537, w: 0.07507663}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Ankle.R.006
+      parentName: Ankle.R.002
+      position: {x: -3.1141097e-11, y: 0.0007015357, z: -3.259629e-11}
+      rotation: {x: 0.022893252, y: 0.0058492813, z: -0.050391436, w: 0.99845004}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Ankle.R.007
+      parentName: Ankle.R.006
+      position: {x: 1.1630618e-10, y: 0.0011881441, z: 1.04773785e-11}
+      rotation: {x: -0.098176, y: 0.005624387, z: -0.040464144, w: 0.9943302}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Ankle.R.007_end
+      parentName: Ankle.R.007
+      position: {x: -0, y: 0.001240974, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.R.003
+      parentName: Ankle.R
+      position: {x: -7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: 0.36431065, y: 0.7910241, z: -0.41852903, w: 0.25766662}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Ankle.R.004
+      parentName: Ankle.R.003
+      position: {x: -2.7939677e-11, y: 0.00088963896, z: -2.2700987e-11}
+      rotation: {x: 0.0077979807, y: 0.029655648, z: -0.2776844, w: 0.96018285}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: Ankle.R.005
+      parentName: Ankle.R.004
+      position: {x: 8.843926e-11, y: 0.0012103171, z: 9.3132255e-12}
+      rotation: {x: -0.09966647, y: -0.0029069092, z: 0.023875246, w: 0.9947302}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.R.005_end
+      parentName: Ankle.R.005
+      position: {x: -0, y: 0.0012357485, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thigh.L
+      parentName: Hips
+      position: {x: -0.0013226706, y: 0.0002877437, z: -0.0004533224}
+      rotation: {x: 0.9973729, y: 0.038827058, z: -0.004397205, w: -0.06099533}
+      scale: {x: 0.99999976, y: 1.0000001, z: 0.9999991}
+    - name: MiddleLeg.L
+      parentName: thigh.L
+      position: {x: -4.6275088e-11, y: 0.0029509992, z: 1.3948011e-10}
+      rotation: {x: 0.4343265, y: -0.0005955699, z: 0.039814126, w: 0.899875}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Shin.L
+      parentName: MiddleLeg.L
+      position: {x: 6.519258e-11, y: 0.0030816116, z: -9.3132255e-12}
+      rotation: {x: -0.40718883, y: 0.0009511045, z: 0.025092667, w: 0.9129988}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Ankle.L
+      parentName: Shin.L
+      position: {x: 9.3132255e-12, y: 0.0036752706, z: 6.0535965e-11}
+      rotation: {x: -0.15672205, y: 0.06306465, z: 0.0001412667, w: 0.9856273}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Hoof.L
+      parentName: Ankle.L
+      position: {x: 7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: 0.8078964, y: 0.02626551, z: -0.021653112, w: 0.58834076}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Hoof.L.001
+      parentName: Hoof.L
+      position: {x: -1.1335942e-10, y: 0.0009236631, z: 7.130438e-12}
+      rotation: {x: 0.088232204, y: -0.00086924294, z: -0.00024244493, w: 0.99609953}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Hoof.L.002
+      parentName: Hoof.L.001
+      position: {x: 3.565437e-11, y: 0.0010304757, z: -3.201166e-12}
+      rotation: {x: -0.11634226, y: -0.0000000016454993, z: 0.00042121517, w: 0.9932091}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hoof.L.002_end
+      parentName: Hoof.L.002
+      position: {x: -0, y: 0.001317335, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.L.001
+      parentName: Ankle.L
+      position: {x: 7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: 0.20766039, y: 0.8767537, z: -0.4071261, w: 0.1497615}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: Ankle.L.008
+      parentName: Ankle.L.001
+      position: {x: -4.631147e-11, y: 0.0008027616, z: -4.4237822e-11}
+      rotation: {x: 0.061804812, y: 0.04021169, z: -0.2538634, w: 0.96442556}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999998}
+    - name: Ankle.L.009
+      parentName: Ankle.L.008
+      position: {x: -1.7680576e-11, y: 0.0011816178, z: -1.0186341e-12}
+      rotation: {x: -0.104551, y: -0.008052924, z: 0.047963746, w: 0.99332964}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Ankle.L.009_end
+      parentName: Ankle.L.009
+      position: {x: -0, y: 0.0011879574, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.L.002
+      parentName: Ankle.L
+      position: {x: 7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: -0.09701756, y: 0.8834219, z: -0.45223537, w: -0.07507663}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Ankle.L.006
+      parentName: Ankle.L.002
+      position: {x: 3.1141097e-11, y: 0.0007015357, z: -3.259629e-11}
+      rotation: {x: 0.022893252, y: -0.0058492813, z: 0.050391436, w: 0.99845004}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Ankle.L.007
+      parentName: Ankle.L.006
+      position: {x: -1.1630618e-10, y: 0.0011881441, z: 1.04773785e-11}
+      rotation: {x: -0.098176, y: -0.005624387, z: 0.040464144, w: 0.9943302}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Ankle.L.007_end
+      parentName: Ankle.L.007
+      position: {x: -0, y: 0.001240974, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.L.003
+      parentName: Ankle.L
+      position: {x: 7.683411e-11, y: 0.0008519188, z: 4.6566126e-11}
+      rotation: {x: -0.36431065, y: 0.7910241, z: -0.41852903, w: -0.25766662}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Ankle.L.004
+      parentName: Ankle.L.003
+      position: {x: 2.7939677e-11, y: 0.00088963896, z: -2.2700987e-11}
+      rotation: {x: 0.0077979807, y: -0.029655648, z: 0.2776844, w: 0.96018285}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: Ankle.L.005
+      parentName: Ankle.L.004
+      position: {x: -8.843926e-11, y: 0.0012103171, z: 9.3132255e-12}
+      rotation: {x: -0.09966647, y: 0.0029069092, z: -0.023875246, w: 0.9947302}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle.L.005_end
+      parentName: Ankle.L.005
+      position: {x: -0, y: 0.0012357485, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Butt.l
+      parentName: Hips
+      position: {x: -0, y: -9.313225e-11, z: 1.4901161e-10}
+      rotation: {x: -0.38741553, y: 0.1012991, z: 0.23180154, w: 0.88651896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Butt.l_end
+      parentName: Butt.l
+      position: {x: -0, y: 0.0021246069, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Butt.r
+      parentName: Hips
+      position: {x: -0, y: -9.313225e-11, z: 1.4901161e-10}
+      rotation: {x: -0.38741553, y: -0.1012991, z: -0.23180154, w: 0.88651896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Butt.r_end
+      parentName: Butt.r
+      position: {x: -0, y: 0.0021246069, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperBodyRotation
+      parentName: Hips
+      position: {x: -0, y: 0.0068023806, z: 0.0018133413}
+      rotation: {x: 0.16215193, y: -0.00000011763167, z: -0.000000019330013, w: 0.9867658}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: UpperBodyRotation_end
+      parentName: UpperBodyRotation
+      position: {x: -0, y: 0.0014954763, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: footpad.l
+      parentName: Hips
+      position: {x: -0.0009999999, y: -0.008621468, z: -0.0046502757}
+      rotation: {x: 0.819365, y: 0.0013504882, z: 0.0019302393, w: 0.57326734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnkleMCH.l
+      parentName: footpad.l
+      position: {x: 0.00002579555, y: 0.000015080309, z: -0.0012300287}
+      rotation: {x: 0.51546055, y: -0.02615027, z: -0.022090336, w: 0.8562293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnkleMCH.l_end
+      parentName: AnkleMCH.l
+      position: {x: -0, y: 0.0010622266, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: footpad.r
+      parentName: Hips
+      position: {x: 0.0009999999, y: -0.008621468, z: -0.0046502757}
+      rotation: {x: 0.819365, y: -0.0013504882, z: -0.0019302393, w: 0.57326734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnkleMCH.r
+      parentName: footpad.r
+      position: {x: -0.00002579555, y: 0.000015080309, z: -0.0012300287}
+      rotation: {x: 0.51546055, y: 0.02615027, z: 0.022090336, w: 0.8562293}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AnkleMCH.r_end
+      parentName: AnkleMCH.r
+      position: {x: -0, y: 0.0010622266, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legiktarget.l
+      parentName: Hips
+      position: {x: -0.001, y: -0.004520203, z: 0.004244755}
+      rotation: {x: 0.17398462, y: -0.019299868, z: -0.0034105617, w: 0.98455334}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: legiktarget.l_end
+      parentName: legiktarget.l
+      position: {x: -0, y: 0.0019999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legiktarget.r
+      parentName: Hips
+      position: {x: 0.001, y: -0.004520203, z: 0.004244755}
+      rotation: {x: 0.17398462, y: 0.019299868, z: 0.0034105617, w: 0.98455334}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: legiktarget.r_end
+      parentName: legiktarget.r
+      position: {x: -0, y: 0.0019999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lowerlegiktarget.l
+      parentName: Hips
+      position: {x: -0.001, y: -0.001772274, z: -0.009123076}
+      rotation: {x: 0.1739846, y: -0.019299868, z: -0.0034105615, w: 0.98455334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lowerlegiktarget.l_end
+      parentName: Lowerlegiktarget.l
+      position: {x: -0, y: 0.0019999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lowerlegiktarget.r
+      parentName: Hips
+      position: {x: 0.001, y: -0.001772274, z: -0.009123076}
+      rotation: {x: 0.1739846, y: 0.019299868, z: 0.0034105615, w: 0.98455334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lowerlegiktarget.r_end
+      parentName: Lowerlegiktarget.r
+      position: {x: -0, y: 0.0019999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsethigh.r
+      parentName: Hips
+      position: {x: 0.0013226706, y: 0.0002877437, z: -0.0004533224}
+      rotation: {x: 0.98474246, y: -0, z: 0, w: -0.17401801}
+      scale: {x: 1, y: 1, z: 1.0000008}
+    - name: falseshin.r
+      parentName: falsethigh.r
+      position: {x: -0, y: 0.0050000004, z: 1.1641532e-12}
+      rotation: {x: 7.1054274e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsefoot.r
+      parentName: falseshin.r
+      position: {x: -0, y: 0.0050000004, z: 1.1641532e-12}
+      rotation: {x: -0.70710665, y: 0.000000030908623, z: -0.000000030908613, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsefoot.r_end
+      parentName: falsefoot.r
+      position: {x: -0, y: 0.0025, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsethigh.l
+      parentName: Hips
+      position: {x: -0.0013226706, y: 0.0002877437, z: -0.0004533224}
+      rotation: {x: 0.98474246, y: -0, z: 0, w: -0.17401801}
+      scale: {x: 1, y: 1, z: 1.0000008}
+    - name: falseshin.l
+      parentName: falsethigh.l
+      position: {x: -0, y: 0.0050000004, z: 1.1641532e-12}
+      rotation: {x: 7.1054274e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsefoot.l
+      parentName: falseshin.l
+      position: {x: -0, y: 0.0050000004, z: 1.1641532e-12}
+      rotation: {x: -0.70710665, y: -0.000000030908623, z: 0.000000030908613, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: falsefoot.l_end
+      parentName: falsefoot.l
+      position: {x: -0, y: 0.0025, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HeadLookAtTarget
+      parentName: HipController
+      position: {x: -0, y: 0.018, z: 0.0095}
+      rotation: {x: 0, y: -0.019598898, z: -0, w: 0.99980795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HeadLookAtTarget_end
+      parentName: HeadLookAtTarget
+      position: {x: -0, y: 0.0019999992, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLegIkBind.l
+      parentName: HipController
+      position: {x: -0.0009799999, y: 0.006890205, z: 0.00026729493}
+      rotation: {x: 0.6961727, y: 0.039287075, z: 0.038210917, w: 0.7157793}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: UpperLegIkBind.l_end
+      parentName: UpperLegIkBind.l
+      position: {x: -0, y: 0.0018006942, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLegIkBind.r
+      parentName: HipController
+      position: {x: 0.0009799999, y: 0.006890205, z: 0.00026729493}
+      rotation: {x: 0.6961727, y: -0.039287075, z: -0.038210917, w: 0.7157793}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: UpperLegIkBind.r_end
+      parentName: UpperLegIkBind.r
+      position: {x: -0, y: 0.0018006942, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FootIkBind.l
+      parentName: Human_Female_Armature
+      position: {x: -0.0009799999, y: 0.0008849197, z: 0.0012301361}
+      rotation: {x: -0.023779418, y: -0.028850662, z: 0.00068653206, w: 0.99930066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLegMCH.l
+      parentName: FootIkBind.l
+      position: {x: 0.0003230182, y: -0.0014201326, z: 0.0055895317}
+      rotation: {x: 0.9996524, y: -0.00038205952, z: 0.02596613, w: -0.0045542107}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: UpperLegMCH.l_end
+      parentName: UpperLegMCH.l
+      position: {x: -0, y: 0.0013009612, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FootIkBind.r
+      parentName: Human_Female_Armature
+      position: {x: 0.0009799999, y: 0.0008849197, z: 0.0012301361}
+      rotation: {x: -0.023779418, y: 0.028850662, z: -0.00068653206, w: 0.99930066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLegMCH.r
+      parentName: FootIkBind.r
+      position: {x: -0.0003230182, y: -0.0014201326, z: 0.0055895317}
+      rotation: {x: 0.9996524, y: 0.00038205952, z: -0.02596613, w: -0.0045542107}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: UpperLegMCH.r_end
+      parentName: UpperLegMCH.r
+      position: {x: -0, y: 0.0013009612, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tail Feathers.001
+      parentName: Harpy(Clone)
+      position: {x: -0, y: 0, z: -1.0552237}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 81d52723ccae4264f87c0a44e67fab2f, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

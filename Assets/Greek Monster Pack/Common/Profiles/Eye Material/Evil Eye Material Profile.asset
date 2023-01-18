@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32339c531485697409fab13f05e2e3a3, type: 3}
+  m_Name: Evil Eye Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Gold
+    material: {fileID: 2100000, guid: 7a3cf4c87b7497642b581a7466f8edfe, type: 2}
+  - name: Red
+    material: {fileID: 2100000, guid: 2a906d73c020abe44bf1da1d81dc415f, type: 2}
+  - name: Violet
+    material: {fileID: 2100000, guid: 030678e0e292aa747860541cf43f032c, type: 2}
+  - name: Pink
+    material: {fileID: 2100000, guid: add916d2d3b770944baf5547969ae3f1, type: 2}
+  - name: Deep Violet
+    material: {fileID: 2100000, guid: 0775562a6bdbfc04194369697523e135, type: 2}

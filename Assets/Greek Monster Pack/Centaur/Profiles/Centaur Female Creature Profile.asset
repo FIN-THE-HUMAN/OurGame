@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a654b7f843f84eb4a9de65078d56c73f, type: 3}
+  m_Name: Centaur Female Creature Profile
+  m_EditorClassIdentifier: 
+  creatureGender: 1
+  meshMaterialIndex: 0
+  eyeMaterialIndex: 1
+  handleSkinTonesSeperately: 0
+  skinTones: 3
+  headHairOffset: {x: 0, y: 0.005, z: 0.015}
+  chestHairOffset: {x: 0, y: 0.005, z: 0.0165}
+  usableMaterials:
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: e31cf7f4adf56b14eafd37d1b423d7c7, type: 2}
+    skinTone: 0
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: 05275ff96dd91424c9b48a431a58e834, type: 2}
+    skinTone: 1
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: ba0dc26a458e18c4687997949b0c874e, type: 2}
+    skinTone: 2
+  - name: Black Paint
+    material: {fileID: 2100000, guid: 084ad8a8322b5ee47bd02434b4e78a79, type: 2}
+    skinTone: 0
+  - name: Black Paint
+    material: {fileID: 2100000, guid: f364e0399598dd245b5b08dcf44c7d01, type: 2}
+    skinTone: 1
+  - name: Black Paint
+    material: {fileID: 2100000, guid: b3a95b19e3708b3428225e5371c4dffa, type: 2}
+    skinTone: 2
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: 8d47f1616f006bd42956756f9987e355, type: 2}
+    skinTone: 0
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: 7a02d4619e4743149a810712e02647e6, type: 2}
+    skinTone: 1
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: 6694f8631546e804bb85fb5b8a1e9905, type: 2}
+    skinTone: 2
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: a0f397759fdcbff40bcc14b4d5fcb187, type: 2}
+    skinTone: 0
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: 14b49c730fd8fd44f849cb4e70d40c51, type: 2}
+    skinTone: 1
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: 494e516a9447782478401a97cd5534eb, type: 2}
+    skinTone: 2
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: b8b2ee04f9fd4c24eb39ba86188fd6c0, type: 2}
+    skinTone: 0
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: 92d4c2217ded3674595c71219247e2e9, type: 2}
+    skinTone: 1
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: a23d4faa48396814481b6fedf14c9cd4, type: 2}
+    skinTone: 2
+  - name: Bay
+    material: {fileID: 2100000, guid: 2d0085815e3bcd34580ebc3cdb8260d0, type: 2}
+    skinTone: 0
+  - name: Bay
+    material: {fileID: 2100000, guid: 0e853ea6cad28fd4489215d9b07b658c, type: 2}
+    skinTone: 1
+  - name: Bay
+    material: {fileID: 2100000, guid: 9d9bba2a2c52f044e8c65731d6ffbd78, type: 2}
+    skinTone: 2
+  - name: Black
+    material: {fileID: 2100000, guid: 523a2a4f7a7f878439d3daba7eac8dd0, type: 2}
+    skinTone: 0
+  - name: Black
+    material: {fileID: 2100000, guid: 1731c9e8bc6208e469ca624a34287c33, type: 2}
+    skinTone: 1
+  - name: Black
+    material: {fileID: 2100000, guid: d6265afb123258944af1506465de2592, type: 2}
+    skinTone: 2
+  - name: Grey
+    material: {fileID: 2100000, guid: be24a980852e064409169eda7e656896, type: 2}
+    skinTone: 0
+  - name: Grey
+    material: {fileID: 2100000, guid: 85d61d9c33e2cc548a5080882232190c, type: 2}
+    skinTone: 1
+  - name: Grey
+    material: {fileID: 2100000, guid: c89f49eb960c6414397caf4acefc1c5e, type: 2}
+    skinTone: 2
+  - name: Tan
+    material: {fileID: 2100000, guid: 666e3c50b752e7c4ea678ae32ca286cc, type: 2}
+    skinTone: 0
+  - name: Tan
+    material: {fileID: 2100000, guid: ebf144e04a93ac44ca57c3aae20630fa, type: 2}
+    skinTone: 1
+  - name: Tan
+    material: {fileID: 2100000, guid: 3eef31569df2c77489de5da29a88b41a, type: 2}
+    skinTone: 2
+  - name: Chestnut
+    material: {fileID: 2100000, guid: 65565b62e34c0dc46a9e044a56ce8a21, type: 2}
+    skinTone: 0
+  - name: Chestnut
+    material: {fileID: 2100000, guid: d83e3e8db5d088b4683f9263e9b70595, type: 2}
+    skinTone: 1
+  - name: Chestnut
+    material: {fileID: 2100000, guid: 310681c8d5e51714eafb3ac6fc34297e, type: 2}
+    skinTone: 2
+  - name: White
+    material: {fileID: 2100000, guid: 6a0ecdeae26b7604ca81cc63845037d0, type: 2}
+    skinTone: 0
+  - name: White
+    material: {fileID: 2100000, guid: c3362341dbfac6a478591b4d1f1605d1, type: 2}
+    skinTone: 1
+  - name: White
+    material: {fileID: 2100000, guid: 75e66d4ca8a15024a8a8f8d7418e95da, type: 2}
+    skinTone: 2
+  armaturePath:
+  - Human_Female_Armature
+  - HipController
+  - Hips
+  - spine.001
+  - spine.002
+  - spine.003
+  - Neck
+  - Head
+  baseBoneName: spine.003

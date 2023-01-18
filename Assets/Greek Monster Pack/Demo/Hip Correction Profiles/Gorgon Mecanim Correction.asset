@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b4ce0dd2e9fe344a4220f1ab17de94, type: 3}
+  m_Name: Gorgon Mecanim Correction
+  m_EditorClassIdentifier: 
+  animationRecordData:
+  - clipRecord: {fileID: 11400000, guid: 6873efd136f705341a050c4f24c78f4c, type: 2}
+    adjustmentSpeed: 5
+    cycleResetValue: -1
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: 29
+      tiltFactor: -24
+      bendFactor: -13
+    maxAngleShift: 20
+  - clipRecord: {fileID: 11400000, guid: 3fa8b23d379a22d42961707357711d69, type: 2}
+    adjustmentSpeed: 5
+    cycleResetValue: -1
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: 29
+      tiltFactor: -24
+      bendFactor: -13
+    maxAngleShift: 5
+  - clipRecord: {fileID: 11400000, guid: 91ffa642fcb7a1b4a94ce65632b83388, type: 2}
+    adjustmentSpeed: 5
+    cycleResetValue: 0
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: 0
+      tiltFactor: 0
+      bendFactor: -12
+    maxAngleShift: 20
+  - clipRecord: {fileID: 11400000, guid: f2db4e4bea7a80c499676bdcbe0facd7, type: 2}
+    adjustmentSpeed: 20
+    cycleResetValue: -1
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: 0
+      tiltFactor: 0
+      bendFactor: -12
+    maxAngleShift: 5
+  - clipRecord: {fileID: 11400000, guid: 1bb73f9b9b086e6449d3108cae9b049a, type: 2}
+    adjustmentSpeed: 5
+    cycleResetValue: -1
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: -6
+      tiltFactor: 0
+      bendFactor: 0
+    maxAngleShift: 20
+  - clipRecord: {fileID: 11400000, guid: c58e2ad197da91945b585e68cb139cbc, type: 2}
+    adjustmentSpeed: 20
+    cycleResetValue: -1
+    overrideCorrectionFactors: 1
+    overrideCorrectionFactorValues:
+      twistFactor: -6
+      tiltFactor: 0
+      bendFactor: 0
+    maxAngleShift: 5
+  correctionFactors:
+    twistFactor: 0
+    tiltFactor: 0
+    bendFactor: 0
+  defaultAdjustmentSpeed: 20
+  speedRampFactor: 1
+  freezeLimit: 180

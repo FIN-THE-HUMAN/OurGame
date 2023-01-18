@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a027e4717624345bcf23f935dc5d28, type: 3}
+  m_Name: Dark Hair Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Hair Shaved
+    material: {fileID: 2100000, guid: 97b52a556c4859a4abec3aba6b3f3572, type: 2}
+  - name: Black
+    material: {fileID: 2100000, guid: 0934984f96a04bf46896e324b0693061, type: 2}
+  - name: Dark Brown
+    material: {fileID: 2100000, guid: f95c8b675906edb4e9af5ba7c70ba67c, type: 2}
+  - name: Brown
+    material: {fileID: 2100000, guid: b216a8d2ae2a72641961f8520f2783ab, type: 2}
+  - name: Dark Grey
+    material: {fileID: 2100000, guid: 527f4358e372bf449a7678144022f7ff, type: 2}

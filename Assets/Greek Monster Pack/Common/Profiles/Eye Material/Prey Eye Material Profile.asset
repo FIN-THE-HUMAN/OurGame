@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32339c531485697409fab13f05e2e3a3, type: 3}
+  m_Name: Prey Eye Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Brown
+    material: {fileID: 2100000, guid: b7b0c65be70674b4f89297fc9848e266, type: 2}
+  - name: Light Brown
+    material: {fileID: 2100000, guid: 76e85fbe458ee8141895348f00189441, type: 2}
+  - name: Dark Brown
+    material: {fileID: 2100000, guid: 67274f6b2b378d947a345596c3aab702, type: 2}
+  - name: Grey
+    material: {fileID: 2100000, guid: 6fdbd99f211840f498c7ad490009a5f2, type: 2}

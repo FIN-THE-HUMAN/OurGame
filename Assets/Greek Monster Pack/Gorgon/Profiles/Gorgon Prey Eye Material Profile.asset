@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32339c531485697409fab13f05e2e3a3, type: 3}
+  m_Name: Gorgon Prey Eye Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Brown
+    material: {fileID: 2100000, guid: a9002cdff5f038641a3c8e51ba5ea739, type: 2}
+  - name: Light Brown
+    material: {fileID: 2100000, guid: 77c00ec207db2bb449ec7a3a6d1e6f05, type: 2}
+  - name: Dark Brown
+    material: {fileID: 2100000, guid: 51c6dc6cd6c6d8540a0cc47a015a8aea, type: 2}
+  - name: Grey
+    material: {fileID: 2100000, guid: c854507fd0effb448b5372a1517085a7, type: 2}

@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a654b7f843f84eb4a9de65078d56c73f, type: 3}
+  m_Name: Centaur Male Creature Profile
+  m_EditorClassIdentifier: 
+  creatureGender: 0
+  meshMaterialIndex: 0
+  eyeMaterialIndex: 1
+  handleSkinTonesSeperately: 0
+  skinTones: 3
+  usableMaterials:
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: 3a445ad7a2945114ba09e73dd6663476, type: 2}
+    skinTone: 0
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: 2df3d12d6d1b1ca49a902f99872611fc, type: 2}
+    skinTone: 1
+  - name: Bay Paint
+    material: {fileID: 2100000, guid: f6a8e90c2d3e19f4a93ab41beda42f7a, type: 2}
+    skinTone: 2
+  - name: Black Paint
+    material: {fileID: 2100000, guid: 57f3c412423b7584a8554da427080178, type: 2}
+    skinTone: 0
+  - name: Black Paint
+    material: {fileID: 2100000, guid: dca84e054ac470140bd70fe96c4f8c76, type: 2}
+    skinTone: 1
+  - name: Black Paint
+    material: {fileID: 2100000, guid: a4c28688f952f2244ad15c8093d3a0bd, type: 2}
+    skinTone: 2
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: e7b31a3b638b992459b39c62b81658fc, type: 2}
+    skinTone: 0
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: bbdade8c1ec132a41abc3a8902f48218, type: 2}
+    skinTone: 1
+  - name: Grey Paint
+    material: {fileID: 2100000, guid: e04b77bebbc0bd44b9160facc1faa5a3, type: 2}
+    skinTone: 2
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: 76524a7f4954258439b3a34fd2146fbf, type: 2}
+    skinTone: 0
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: 31e14ebd3874fe74596dbf722717f788, type: 2}
+    skinTone: 1
+  - name: Tan Paint
+    material: {fileID: 2100000, guid: c100a5b222ff24547b0465e68d9d83f0, type: 2}
+    skinTone: 2
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: 99905a174c721704aa0b61bad07b337a, type: 2}
+    skinTone: 0
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: 0a52ed94bd368664d82212ce45d15e54, type: 2}
+    skinTone: 1
+  - name: Chestnut Paint
+    material: {fileID: 2100000, guid: 6f89c6a6d502c1d4c8ea21b952405dcb, type: 2}
+    skinTone: 2
+  - name: Bay
+    material: {fileID: 2100000, guid: 2729b191421b9c348b6289e13f4c6f2a, type: 2}
+    skinTone: 0
+  - name: Bay
+    material: {fileID: 2100000, guid: c50fc8c3fbf9dd44bab90357a25aeb23, type: 2}
+    skinTone: 1
+  - name: Bay
+    material: {fileID: 2100000, guid: db772d17633995c46b81029d40a7a434, type: 2}
+    skinTone: 2
+  - name: Black
+    material: {fileID: 2100000, guid: 745ed07d88374624d874f48443aea0ee, type: 2}
+    skinTone: 0
+  - name: Black
+    material: {fileID: 2100000, guid: be8d5e0078e880a4ab9dad91ee78ec8e, type: 2}
+    skinTone: 1
+  - name: Black
+    material: {fileID: 2100000, guid: cdc6dff46188d7f4ebc8b00c83b78020, type: 2}
+    skinTone: 2
+  - name: Grey
+    material: {fileID: 2100000, guid: 0faf8eca7a2dc104e9d4496fdcd57c57, type: 2}
+    skinTone: 0
+  - name: Grey
+    material: {fileID: 2100000, guid: 202a6d8413381444bbf5fad86b33a89d, type: 2}
+    skinTone: 1
+  - name: Grey
+    material: {fileID: 2100000, guid: be38c9d5d8dc0894497c829978ed2320, type: 2}
+    skinTone: 2
+  - name: Tan
+    material: {fileID: 2100000, guid: 93fa0bb699c92e144bd148eac32d4789, type: 2}
+    skinTone: 0
+  - name: Tan
+    material: {fileID: 2100000, guid: 56394c2d0bb99d749bb17c3572e7444f, type: 2}
+    skinTone: 1
+  - name: Tan
+    material: {fileID: 2100000, guid: ed1bc4d47ba4d554c8ae10bd8825ec08, type: 2}
+    skinTone: 2
+  - name: Chestnut
+    material: {fileID: 2100000, guid: ca0d6decef115604c87f9885e8c29236, type: 2}
+    skinTone: 0
+  - name: Chestnut
+    material: {fileID: 2100000, guid: bffadb9663147db4785e05b159714267, type: 2}
+    skinTone: 1
+  - name: Chestnut
+    material: {fileID: 2100000, guid: 705da1ed28da9e24094bd000eeabaf09, type: 2}
+    skinTone: 2
+  - name: White
+    material: {fileID: 2100000, guid: 02518108cd227bf43a3f7e056250f131, type: 2}
+    skinTone: 0
+  - name: White
+    material: {fileID: 2100000, guid: cd69ee7eb3cae8b4c9c8a2a0014d0c9a, type: 2}
+    skinTone: 1
+  - name: White
+    material: {fileID: 2100000, guid: cc31c28b54a34774d8ab574d55352aaa, type: 2}
+    skinTone: 2

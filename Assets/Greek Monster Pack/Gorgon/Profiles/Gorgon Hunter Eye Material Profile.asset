@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32339c531485697409fab13f05e2e3a3, type: 3}
+  m_Name: Gorgon Hunter Eye Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Blue
+    material: {fileID: 2100000, guid: f7ed803b453f6a14eaed6479369dacc2, type: 2}
+  - name: Light Blue
+    material: {fileID: 2100000, guid: d49de45b462b9aa43ac1bdd1cad7baf1, type: 2}
+  - name: Light Brown
+    material: {fileID: 2100000, guid: 77c00ec207db2bb449ec7a3a6d1e6f05, type: 2}
+  - name: Yellow
+    material: {fileID: 2100000, guid: 0f822207b770c5643a9ecd64d5c43a26, type: 2}
+  - name: Gold
+    material: {fileID: 2100000, guid: 6d0f0de0b8a922e4a96ec87f0cc73390, type: 2}
+  - name: Light Grey
+    material: {fileID: 2100000, guid: 441cf87e547072241b98d76e5133da9b, type: 2}

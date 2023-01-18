@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32339c531485697409fab13f05e2e3a3, type: 3}
+  m_Name: Gorgon Human Eye Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Blue
+    material: {fileID: 2100000, guid: f7ed803b453f6a14eaed6479369dacc2, type: 2}
+  - name: Light Blue
+    material: {fileID: 2100000, guid: d49de45b462b9aa43ac1bdd1cad7baf1, type: 2}
+  - name: Green
+    material: {fileID: 2100000, guid: bc7718321c8d65343979050454127089, type: 2}
+  - name: Dark Green
+    material: {fileID: 2100000, guid: 48ac5c26e7bec8243996926bf3698e03, type: 2}
+  - name: Brown
+    material: {fileID: 2100000, guid: a9002cdff5f038641a3c8e51ba5ea739, type: 2}
+  - name: Grey
+    material: {fileID: 2100000, guid: c854507fd0effb448b5372a1517085a7, type: 2}
+  - name: Dark Blue
+    material: {fileID: 2100000, guid: 581db1f1f05b5794fac3e0efa3ccc62d, type: 2}

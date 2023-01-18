@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a027e4717624345bcf23f935dc5d28, type: 3}
+  m_Name: Light Hair Material Profile
+  m_EditorClassIdentifier: 
+  usableMaterials:
+  - name: Hair Shaved
+    material: {fileID: 2100000, guid: 97b52a556c4859a4abec3aba6b3f3572, type: 2}
+  - name: Light Brown
+    material: {fileID: 2100000, guid: fce25934240a5a44d98cb9e4550cf003, type: 2}
+  - name: Dirty Blonde
+    material: {fileID: 2100000, guid: 2903c877e45aa9f4fafe4dc6ed9f5780, type: 2}
+  - name: Blonde
+    material: {fileID: 2100000, guid: 4dc2efdecc832444c856a7c409e05e45, type: 2}
+  - name: Red
+    material: {fileID: 2100000, guid: ab01b18e20de25b438b3905810760901, type: 2}

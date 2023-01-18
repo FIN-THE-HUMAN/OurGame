@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c441cb6eb5369a942aae618d5e950982, type: 3}
+  m_Name: Cyclops Eyebrow Profile
+  m_EditorClassIdentifier: 
+  eyebrowIds:
+  - hairType: 0
+    id: 
+  - hairType: 1
+    id: Eyebrow_CyclopsMale_01
+  - hairType: 2
+    id: Eyebrow_CyclopsMale_02
+  - hairType: 3
+    id: Eyebrow_CyclopsMale_03
+  - hairType: 4
+    id: Eyebrow_CyclopsMale_04
+  - hairType: 5
+    id: Eyebrow_CyclopsMale_05
+  - hairType: 6
+    id: Eyebrow_CyclopsMale_06
+  - hairType: 7
+    id: Eyebrow_CyclopsMale_06

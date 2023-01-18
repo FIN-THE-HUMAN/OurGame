@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e8788bc584c84fb367fd0374c8f1c, type: 3}
+  m_Name: Harpy Extremity Profile
+  m_EditorClassIdentifier: 
+  meshMaterialIndex: 0
+  materialInformation:
+  - material: {fileID: 2100000, guid: 71569e65078142a408837fec90111c3a, type: 2}
+    lowIndex: 0
+    highIndex: 2
+  - material: {fileID: 2100000, guid: 1ac58a40864e4594d9fe4754d07ae0f7, type: 2}
+    lowIndex: 3
+    highIndex: 5
+  - material: {fileID: 2100000, guid: e05339bc4a226c74b934a9dbd4a63946, type: 2}
+    lowIndex: 6
+    highIndex: 8
+  - material: {fileID: 2100000, guid: af7d5d38b8cdb0e42a6c9d4e58b834ba, type: 2}
+    lowIndex: 9
+    highIndex: 11
+  - material: {fileID: 2100000, guid: 50b50eba278acc842873e0ab9cfc3901, type: 2}
+    lowIndex: 12
+    highIndex: 14
+  - material: {fileID: 2100000, guid: c2b24b97d20c10f42ace5b8b6c1bdbce, type: 2}
+    lowIndex: 15
+    highIndex: 17
+  - material: {fileID: 2100000, guid: bb7d8fba5ca33f9499a538b4ca6b5b35, type: 2}
+    lowIndex: 18
+    highIndex: 20
+  - material: {fileID: 2100000, guid: d5023be889f705c4581d4ee89b53a3ff, type: 2}
+    lowIndex: 21
+    highIndex: 23
+  - material: {fileID: 2100000, guid: 786e8bd593e55254db77e1b0aac5f0ae, type: 2}
+    lowIndex: 24
+    highIndex: 26
+  - material: {fileID: 2100000, guid: 83566ddea4dac744eadefd458e625283, type: 2}
+    lowIndex: 27
+    highIndex: 29
+  - material: {fileID: 2100000, guid: a12a236d3570e5f4294b8b9c6d12c150, type: 2}
+    lowIndex: 30
+    highIndex: 32
+  - material: {fileID: 2100000, guid: e6cfd6dfd99908c44be62854dcf95797, type: 2}
+    lowIndex: 33
+    highIndex: 35
+  - material: {fileID: 2100000, guid: e5e5b02eff4d0664bb9264c8a732423d, type: 2}
+    lowIndex: 36
+    highIndex: 38
+  - material: {fileID: 2100000, guid: 90bbb3c5ede4ff44f835fb1278138163, type: 2}
+    lowIndex: 39
+    highIndex: 41

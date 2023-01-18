@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e8788bc584c84fb367fd0374c8f1c, type: 3}
+  m_Name: Satyr Female Extremity Profile
+  m_EditorClassIdentifier: 
+  meshMaterialIndex: 0
+  materialInformation:
+  - material: {fileID: 2100000, guid: 65c908d8571fc1b4b8581fa66610ed4a, type: 2}
+    lowIndex: 0
+    highIndex: 2
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 00e725da05b78d74b9f884d2a40cf0a2, type: 2}
+    lowIndex: 3
+    highIndex: 5
+    indexGroup: 
+  - material: {fileID: 2100000, guid: e1444ef4e1106944cb5a3ebbc3889bf9, type: 2}
+    lowIndex: 6
+    highIndex: 8
+    indexGroup: 
+  - material: {fileID: 2100000, guid: a6e941669655037458817fe28c247cce, type: 2}
+    lowIndex: 9
+    highIndex: 11
+    indexGroup: 
+  - material: {fileID: 2100000, guid: e19855f5592508b4a852a5db6dcc1fe9, type: 2}
+    lowIndex: 12
+    highIndex: 14
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 794432f7d78e2b64fbcd909cc3cd29e2, type: 2}
+    lowIndex: 15
+    highIndex: 17
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 5fdab38dc4ef516489967c0dbe661f3c, type: 2}
+    lowIndex: 18
+    highIndex: 20
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 368181268331db345ae43cd80096bab6, type: 2}
+    lowIndex: 21
+    highIndex: 23
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 8890c44cf176161438b53d85245749e8, type: 2}
+    lowIndex: 24
+    highIndex: 26
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 50885eeace3a5f14aa067f785e17f7f7, type: 2}
+    lowIndex: 27
+    highIndex: 29
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 7aec221685c72a642b90fac0642406e0, type: 2}
+    lowIndex: 30
+    highIndex: 32
+    indexGroup: 

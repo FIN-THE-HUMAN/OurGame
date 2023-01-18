@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a654b7f843f84eb4a9de65078d56c73f, type: 3}
+  m_Name: Gorgon Creature Profile
+  m_EditorClassIdentifier: 
+  creatureGender: 1
+  meshMaterialIndex: 0
+  eyeMaterialIndex: 1
+  handleSkinTonesSeperately: 0
+  skinTones: 3
+  headHairOffset: {x: 0, y: 0.005, z: -0.014}
+  chestHairOffset: {x: 0, y: 0.005, z: -0.014}
+  usableMaterials:
+  - name: Green Tan
+    material: {fileID: 2100000, guid: 937b453716484a8408c192783533e181, type: 2}
+    skinTone: 0
+  - name: Green Tan
+    material: {fileID: 2100000, guid: fba0701fbd2cf3f4cbeabc1a4721011e, type: 2}
+    skinTone: 1
+  - name: Green Tan
+    material: {fileID: 2100000, guid: 71ca8362e7a80284db25f44ff8c602ca, type: 2}
+    skinTone: 2
+  - name: Blue
+    material: {fileID: 2100000, guid: 8f88e56d96987cf498bca05c6bdd3a06, type: 2}
+    skinTone: 0
+  - name: Blue
+    material: {fileID: 2100000, guid: 1f5ecf73c53426440aa6d9dca5e5aa69, type: 2}
+    skinTone: 1
+  - name: Blue
+    material: {fileID: 2100000, guid: 03783504298587947a57d225f65f9c03, type: 2}
+    skinTone: 2
+  - name: Green
+    material: {fileID: 2100000, guid: 19721d145c82dac4fa325c7bd0e14b69, type: 2}
+    skinTone: 0
+  - name: Green
+    material: {fileID: 2100000, guid: e0d3848926d64f741bff2200108e9095, type: 2}
+    skinTone: 1
+  - name: Green
+    material: {fileID: 2100000, guid: 2ca32a64d2d48ed4fa7661c9e90b59ea, type: 2}
+    skinTone: 2
+  - name: Red
+    material: {fileID: 2100000, guid: 5151e808ddcbfdf4e82966cd7e8a027f, type: 2}
+    skinTone: 0
+  - name: Red
+    material: {fileID: 2100000, guid: 931bd00c36b9bb749859c7ee7b91c9c1, type: 2}
+    skinTone: 1
+  - name: Red
+    material: {fileID: 2100000, guid: 8d619f7f0984de0409be0173ab1e9c83, type: 2}
+    skinTone: 2
+  - name: Gold
+    material: {fileID: 2100000, guid: 428253f536510aa49bccc55f35dfa5f8, type: 2}
+    skinTone: 0
+  - name: Gold
+    material: {fileID: 2100000, guid: b002a5cd2bfb5c14183b5019d19baa00, type: 2}
+    skinTone: 1
+  - name: Gold
+    material: {fileID: 2100000, guid: 48c2cc31d97f05f4d9c228ab24621bd1, type: 2}
+    skinTone: 2
+  - name: White
+    material: {fileID: 2100000, guid: 6e75a900b0c7c4a4fbcbbd944003b497, type: 2}
+    skinTone: 0
+  - name: White
+    material: {fileID: 2100000, guid: 4d01fee8f31676443b72cb2c90a247d6, type: 2}
+    skinTone: 1
+  - name: White
+    material: {fileID: 2100000, guid: e9bfbe20340fef14cafd756960bdcc10, type: 2}
+    skinTone: 2
+  - name: Black
+    material: {fileID: 2100000, guid: 8150a7079757d5a4e9a2a3849c1a20ae, type: 2}
+    skinTone: 0
+  - name: Black
+    material: {fileID: 2100000, guid: e18f43c3c9039bb429d1daf0d2eac1d9, type: 2}
+    skinTone: 1
+  - name: Black
+    material: {fileID: 2100000, guid: 8a385a82958c94740a8485f011d06ceb, type: 2}
+    skinTone: 2
+  - name: Violet
+    material: {fileID: 2100000, guid: 1204d8df4ba20864a9a1ab5730b56034, type: 2}
+    skinTone: 0
+  - name: Violet
+    material: {fileID: 2100000, guid: 07389aa40ac048f4fa546d3915ad2a50, type: 2}
+    skinTone: 1
+  - name: Violet
+    material: {fileID: 2100000, guid: 92fdf4bcdd71548438d69f13cec41b37, type: 2}
+    skinTone: 2
+  - name: Grey
+    material: {fileID: 2100000, guid: df7e19d47542e7c46a3e507455aa8caf, type: 2}
+    skinTone: 0
+  - name: Grey
+    material: {fileID: 2100000, guid: 7251e3a07d2a67a4bb781af2ba5ff37e, type: 2}
+    skinTone: 1
+  - name: Grey
+    material: {fileID: 2100000, guid: d58da63803289f14984c56debfd5c9b0, type: 2}
+    skinTone: 2
+  - name: Tan
+    material: {fileID: 2100000, guid: d41432b8a67febc46a6a4c2bdced914e, type: 2}
+    skinTone: 0
+  - name: Tan
+    material: {fileID: 2100000, guid: 9d3d66ac4a5e23b428d23d5f7eb339de, type: 2}
+    skinTone: 1
+  - name: Tan
+    material: {fileID: 2100000, guid: e2c5ad13eedea7446a436591fba638d0, type: 2}
+    skinTone: 2
+  armaturePath:
+  - Human_Female_Armature
+  - BodyPosition
+  - Hips
+  - spine.001
+  - spine.002
+  - spine.003
+  - Neck
+  - Head
+  baseBoneName: spine.003

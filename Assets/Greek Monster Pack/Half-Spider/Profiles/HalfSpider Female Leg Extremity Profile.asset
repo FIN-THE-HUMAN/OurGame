@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e8788bc584c84fb367fd0374c8f1c, type: 3}
+  m_Name: HalfSpider Female Leg Extremity Profile
+  m_EditorClassIdentifier: 
+  meshMaterialIndex: 0
+  materialInformation:
+  - material: {fileID: 2100000, guid: 63780e42010741441b886fdb9f86407e, type: 2}
+    lowIndex: 0
+    highIndex: 2
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 45328aaf90350be4ab27343debedf15a, type: 2}
+    lowIndex: 3
+    highIndex: 5
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 1d91d69f12baea64081fa235ff89bf3a, type: 2}
+    lowIndex: 6
+    highIndex: 8
+    indexGroup: 
+  - material: {fileID: 2100000, guid: af8c6ac5e7f4fa14fb38922fddb34c0c, type: 2}
+    lowIndex: 9
+    highIndex: 11
+    indexGroup: 
+  - material: {fileID: 2100000, guid: c51f843489fb19a479a05c3d921511ee, type: 2}
+    lowIndex: 12
+    highIndex: 14
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 3ce703e3515e625458fda0ab62861305, type: 2}
+    lowIndex: 15
+    highIndex: 17
+    indexGroup: 
+  - material: {fileID: 2100000, guid: b57ab770545610c4cbc95bb8d6d128df, type: 2}
+    lowIndex: 18
+    highIndex: 20
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 9ffe30b949f68b54787fd4851c38ea69, type: 2}
+    lowIndex: 21
+    highIndex: 23
+    indexGroup: 
+  - material: {fileID: 2100000, guid: c61b859724f422341a3078d531822012, type: 2}
+    lowIndex: 24
+    highIndex: 26
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 6c249e68645f1824aa9e15a56dbe818f, type: 2}
+    lowIndex: 27
+    highIndex: 29
+    indexGroup: 

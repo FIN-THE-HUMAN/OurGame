@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0662dbbbac640ff4e9b963350ebb41a0, type: 3}
+  m_Name: Male Hair Profile
+  m_EditorClassIdentifier: 
+  hairIds:
+  - hairType: 0
+    id: 
+  - hairType: 1
+    id: Hair_Male_01_Long
+  - hairType: 2
+    id: Hair_Male_02_Poneytail
+  - hairType: 3
+    id: Hair_Male_03_Short
+  - hairType: 5
+    id: Hair_Male_05_Thick
+  - hairType: 6
+    id: Hair_Male_04_Shaved
+  - hairType: 4
+    id: Hair_Male_06_Shaggy

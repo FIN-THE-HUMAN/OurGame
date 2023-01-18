@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e8788bc584c84fb367fd0374c8f1c, type: 3}
+  m_Name: Gorgon Extremity Profile
+  m_EditorClassIdentifier: 
+  meshMaterialIndex: 0
+  materialInformation:
+  - material: {fileID: 2100000, guid: 3403558db80e06940b8a55ceaeb757a3, type: 2}
+    lowIndex: 0
+    highIndex: 2
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 41e18b3ad33fbf34791d2aef95f9b4d8, type: 2}
+    lowIndex: 3
+    highIndex: 5
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 0a408fb5586b9f64c82abf9943d19bb1, type: 2}
+    lowIndex: 6
+    highIndex: 8
+    indexGroup: 
+  - material: {fileID: 2100000, guid: ffe7d99f279007040b40cd73d187fd93, type: 2}
+    lowIndex: 9
+    highIndex: 11
+    indexGroup: 
+  - material: {fileID: 2100000, guid: c070afca9f17c0c46a2287d727476297, type: 2}
+    lowIndex: 12
+    highIndex: 14
+    indexGroup: 
+  - material: {fileID: 2100000, guid: eab188c02cbb4db4db922e8b98bca695, type: 2}
+    lowIndex: 15
+    highIndex: 17
+    indexGroup: 
+  - material: {fileID: 2100000, guid: f88dcd4eeec862d4a99cd2caa42e3377, type: 2}
+    lowIndex: 18
+    highIndex: 20
+    indexGroup: 
+  - material: {fileID: 2100000, guid: aec39f1ef7264ef48b5a6638c1ff7628, type: 2}
+    lowIndex: 21
+    highIndex: 23
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 0cc6eb19b8f4bd64ca3c386eea16ddab, type: 2}
+    lowIndex: 24
+    highIndex: 26
+    indexGroup: 
+  - material: {fileID: 2100000, guid: 2332b9b4c5b35bf4196735201fa1dbce, type: 2}
+    lowIndex: 27
+    highIndex: 29
+    indexGroup: 
