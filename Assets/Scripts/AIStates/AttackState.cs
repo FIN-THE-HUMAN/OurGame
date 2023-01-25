@@ -1,31 +1,31 @@
-﻿using static EnemyAI;
+﻿using UnityEngine;
+using static EnemyAI;
 
 public class AttackState : AIState
 {
-    public AttackState(EnemyAI e) : base(e)
+    public override void OnStateExit(EnemyAI enemy)
     {
 
     }
 
-    public override void OnStateExit()
+    public override void OnStateStart(EnemyAI enemy)
     {
-
+        //Debug.Log("AttackState.OnStateStart");
     }
 
-    public override void OnStateStart()
+    public override void OnStateUpdate(EnemyAI enemy)
     {
-
-    }
-
-    public override void OnStateUpdate()
-    {
-        if (_enemy.CanAttackPlayer())
+        //Debug.Log("AttackState.OnStateUpdate");
+        // атаковать с кулдауном
+        if (enemy.CanAttackPlayer())
         {
-            // атаковать с кулдауном
+            //Debug.Log("AttackState. enemy.CanAttackPlayer()");
+            enemy.TryAttackWithCooldown();
         }
         else
         {
-            _enemy.SetState(EnemyState.Chase);
+            //Debug.Log("AttackState. not enemy.CanAttackPlayer()");
+            enemy.SetState(EnemyState.Chase);
             // догонять игрока
         }
     }

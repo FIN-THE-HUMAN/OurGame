@@ -14,13 +14,15 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private Transform _player;
     [SerializeField] private float _attackCooldown = 1f;
+    [SerializeField] private float _hitCooldown = 1f;
+    [SerializeField] private EnemyAIStateSystem _enemyAIStateSystem;
 
     private EnemyState _currentState;
-    private Dictionary<EnemyState, AIState> _states;
+
 
     private float _attackTimer;
     private NavMeshAgent _navMeshAgent;
-    private bool isMoving;
+
     private bool isAttacking;
     private float _attackTime;
 
@@ -29,6 +31,8 @@ public class EnemyAI : MonoBehaviour
     private float meleeDist = 2f; //Distance from which the enemy will attack the player
     private float _rotationTime = 1;
 
+    public bool IsMoving { get; private set; }
+    public float HitCooldown => _hitCooldown;
     public Transform Player => _player;
     public UnityEvent OnAttack;
     public UnityEvent OnMovingStart;
@@ -38,11 +42,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        _states = new Dictionary<EnemyState, AIState> {
-            { EnemyState.Idle, new IdleState(this) },
-            { EnemyState.Chase, new ChaseState(this) },
-            { EnemyState.Attack, new AttackState(this) }
-        };
+
     }
 
     public void Attack()
@@ -51,44 +51,68 @@ public class EnemyAI : MonoBehaviour
         OnAttack.Invoke();
     }
 
-    private IEnumerator QuickLookAtPlayer()
+    public IEnumerator QuickLookAtPlayer(float time)
     {
-        float localRotationTime = _rotationTime;
+        float localRotationTime = time;
         while (localRotationTime > 0)
         {
             Vector3 targetDirection = _player.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(targetDirection);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * _rotationTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime/* * time*/);
             localRotationTime -= Time.deltaTime;
             yield return null;
         }
         yield return null;
     }
 
+    public IEnumerator QuickLookAtPlayer()
+    {
+        return QuickLookAtPlayer(_rotationTime);
+    }
+
+    public IEnumerator GradualTurn(Vector3 endDirection, float speed)
+    {
+        Vector3 startDirection = transform.forward;
+
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime * speed;
+            transform.forward = Vector3.Lerp(startDirection, endDirection, t);
+            yield return null;
+        }
+    }
+
     public void StartMoving()
     {
-        isMoving = true;
+        IsMoving = true;
         OnMovingStart.Invoke();
     }
 
     public void StopMoving()
     {
-        isMoving = false;
+        IsMoving = false;
         OnMovingStop.Invoke();
     }
 
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _currentState = EnemyState.Idle;
     }
 
-    void Update()
+    private void Update()
+    {
+        UpdateCurrentState();
+    }
+
+    /*void Update()
     {
         // Обновления состояния противника
         //UpdateCurrentState();
 
 
-        if (!PathComplete() && !isMoving)
+        if (!PathComplete() && !IsMoving)
             StartMoving();
 
         if (_navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
@@ -97,11 +121,11 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            if (isMoving)
+            if (IsMoving)
             {
                 _navMeshAgent.SetDestination(transform.position);
                 _navMeshAgent.Stop();
-                isMoving = false;
+                IsMoving = false;
 
                 StopMoving();
                 OnIdleStart.Invoke();
@@ -110,7 +134,7 @@ public class EnemyAI : MonoBehaviour
 
         }
 
-        if (PathComplete() && isMoving)
+        if (PathComplete() && IsMoving)
             StopMoving();
 
         if (CanAttackPlayer())
@@ -133,6 +157,15 @@ public class EnemyAI : MonoBehaviour
         //    Debug.Log("NavMeshPathStatus.PathPartial");
         //    StopMoving();
         //}
+    }*/
+
+    public void TryAttackWithCooldown()
+    {
+        if (Time.time > _attackTimer)
+        {
+            Attack();
+            _attackTimer = Time.time + _attackCooldown;
+        }
     }
 
     public bool TryFindPlayer()
@@ -144,12 +177,25 @@ public class EnemyAI : MonoBehaviour
         return false;
     }
 
-    public bool CanReachPosition()
+    public void StartIdle()
     {
+        _navMeshAgent.SetDestination(transform.position);
+        //_navMeshAgent.Stop();
+        IsMoving = false;
+
+        StopMoving();
+        OnIdleStart.Invoke();
+    }
+
+    public bool CanReachPlayer()
+    {
+        _navMeshAgent.SetDestination(_player.position);
         if (_navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
         {
+            _navMeshAgent.SetDestination(transform.position);
             return true;
         }
+        _navMeshAgent.SetDestination(transform.position);
         return false;
     }
 
@@ -165,6 +211,13 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void FollowPlayer()
+    {
+        _navMeshAgent.SetDestination(_player.position);
+        Debug.Log("_player.position = " + _player.position);
+        Debug.Log("IsMoving = " + IsMoving);
+    }
+
     public void SetDestination(Vector3 target)
     {
         _navMeshAgent.SetDestination(target);
@@ -172,13 +225,21 @@ public class EnemyAI : MonoBehaviour
 
     public void SetState(EnemyState state)
     {
+        _enemyAIStateSystem.State[_currentState].OnStateExit(this);
         _currentState = state;
-        _states[_currentState].OnStateStart();
+        _enemyAIStateSystem.State[_currentState].OnStateStart(this);
+    }
+
+    public void SetStateHit()
+    {
+        SetState(EnemyState.Hit);
     }
 
     private void UpdateCurrentState()
     {
-        _states[_currentState].OnStateUpdate();
+        //Debug.Log(_enemyAIStateSystem);
+        //Debug.Log(_enemyAIStateSystem.State[_currentState]);
+        _enemyAIStateSystem?.State[_currentState].OnStateUpdate(this);
     }
 
     //public bool CanAttackPlayer()
@@ -235,5 +296,8 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _navMeshAgent == null ? 2 : _navMeshAgent.stoppingDistance);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, meleeDist);
+        //See player radious
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, visDist);
     }
 }

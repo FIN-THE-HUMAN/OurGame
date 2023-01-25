@@ -1,40 +1,50 @@
-﻿using static EnemyAI;
+﻿using UnityEngine;
+using static EnemyAI;
 
 public class ChaseState : AIState
 {
-    public ChaseState(EnemyAI e) : base(e)
+    public override void OnStateExit(EnemyAI enemy)
     {
 
     }
 
-    public override void OnStateExit()
+    public override void OnStateStart(EnemyAI enemy)
     {
-
+        //Debug.Log("ChaseState.OnStateStart");
+        enemy.StartMoving();
     }
 
-    public override void OnStateStart()
+    public override void OnStateUpdate(EnemyAI enemy)
     {
-
-    }
-
-    public override void OnStateUpdate()
-    {
-        if (_enemy.CanAttackPlayer())
+        //Debug.Log("ChaseState.OnStateUpdate");
+        if (enemy.CanAttackPlayer())
         {
-            _enemy.SetState(EnemyState.Attack);
+            //Debug.Log("ChaseState.CanAttackPlayer");
+            enemy.StopMoving();
+            enemy.SetState(EnemyState.Attack);
         }
         else
         {
-            //Возможно ли достичь игрока
-            if (_enemy.CanReachPosition())
+            //Debug.Log("ChaseState. not CanAttackPlayer");
+            //Возможно ли достичь игрока и видим ли мы его
+            if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
             {
+                //Debug.Log("ChaseState. enemy.CanSeePlayer() && enemy.CanReachPlayer()");
+                if (!enemy.IsMoving)
+                {
+                    enemy.StartMoving();
+                }
+
                 // Нормальный метод преследовтьния игрока
                 //_enemy.TrySetDestination(_enemy.Player.position);
+                enemy.FollowPlayer();
             }
             else
             {
+                Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
                 //Если игрока нельзя достичь, то надо чилить и искать его
-                _enemy.SetState(EnemyState.Idle);
+                enemy.StopMoving();
+                enemy.SetState(EnemyState.Idle);
             }
         }
     }

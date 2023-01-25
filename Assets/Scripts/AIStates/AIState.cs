@@ -1,15 +1,8 @@
 public abstract class AIState
 {
-    protected EnemyAI _enemy;
+    public abstract void OnStateStart(EnemyAI enemy);
 
-    public AIState(EnemyAI enemy)
-    {
-        _enemy = enemy;
-    }
+    public abstract void OnStateUpdate(EnemyAI enemy);
 
-    public abstract void OnStateStart();
-
-    public abstract void OnStateUpdate();
-
-    public abstract void OnStateExit();
+    public abstract void OnStateExit(EnemyAI enemy);
 }

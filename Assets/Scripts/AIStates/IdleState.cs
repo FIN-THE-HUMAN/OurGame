@@ -1,25 +1,28 @@
+using UnityEngine;
 using static EnemyAI;
 
 public class IdleState : AIState
 {
-    public IdleState(EnemyAI e) : base(e)
+    public override void OnStateExit(EnemyAI enemy)
     {
 
     }
 
-    public override void OnStateExit()
+    public override void OnStateStart(EnemyAI enemy)
     {
-
+        //Debug.Log("IdleState.OnStateStart");
+        enemy.StartIdle();
     }
 
-    public override void OnStateStart()
+    public override void OnStateUpdate(EnemyAI enemy)
     {
-
-    }
-
-    public override void OnStateUpdate()
-    {
-        if (_enemy.TryFindPlayer())
-            _enemy.SetState(EnemyState.Chase);
+        //if (enemy.TryFindPlayer())
+        //    enemy.SetState(EnemyState.Chase);
+        //Debug.Log("IdleState.OnStateUpdate");
+        if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
+        {
+            //Debug.Log("CanSeePlayer & CanReachPlayer");
+            enemy.SetState(EnemyState.Chase);
+        }
     }
 }
