@@ -15,6 +15,7 @@ public class MeleeWeapon : MonoBehaviour
     private List<Damagable> _JustAttackedDamagables;
 
     public bool IsAttacking => _isAttacking;
+    public float Cooldown => _cooldown;
     public UnityEvent Attaced;
 
     private void Start()
@@ -26,6 +27,7 @@ public class MeleeWeapon : MonoBehaviour
     {
         if (_canAttack)
         {
+            Debug.Log("OnAttack");
             _canAttack = false;
             _isAttacking = true;
             StartCoroutine(ResetCooldown());
@@ -44,8 +46,10 @@ public class MeleeWeapon : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         var damagable = other.gameObject.GetComponent<Damagable>();
+
         if (damagable != null && damagable.Type == _damagableType && IsAttacking && !_JustAttackedDamagables.Contains(damagable))
         {
+            Debug.Log("OnTriggerEnter " + (_damagableType == Damagable.DamagableType.Player ? "Player" : "Enemy"));
             damagable.Damage(_damage);
             _JustAttackedDamagables.Add(damagable);
         }

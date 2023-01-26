@@ -12,7 +12,7 @@ public class HitState : AIState
 
     public override void OnStateStart(EnemyAI enemy)
     {
-        Debug.Log("HitState.OnStateStart");
+        //Debug.Log("HitState.OnStateStart");
         enemy.StopMoving();
         enemy.StartCoroutine(HitCooldown(enemy));
     }
@@ -30,7 +30,7 @@ public class HitState : AIState
 
         if (enemy.CanAttackPlayer())
         {
-            Debug.Log("CanAttackPlayer");
+            //Debug.Log("CanAttackPlayer");
             //enemy.StartCoroutine(enemy.GradualTurn(enemy.Player.position, 2000f));
             //enemy.StartCoroutine(enemy.QuickLookAtPlayer(0.3f));
             enemy.transform.LookAt(enemy.Player);
@@ -42,7 +42,8 @@ public class HitState : AIState
         }
         else
         {
-            Debug.Log("else");
+            //Debug.Log("else");
+            //enemy.StartCoroutine(enemy.LookPlayer(0.25f, 2));
             enemy.transform.LookAt(enemy.Player);
             //enemy.StartCoroutine(enemy.QuickLookAtPlayer(0.3f));
             enemy.SetState(EnemyState.Idle);

@@ -18,12 +18,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private EnemyAIStateSystem _enemyAIStateSystem;
 
     private EnemyState _currentState;
-
-
     private float _attackTimer;
     private NavMeshAgent _navMeshAgent;
 
-    private bool isAttacking;
+    private bool _isAttacking;
     private float _attackTime;
 
     private float visDist = 10.0f; //Distance of vision
@@ -33,6 +31,7 @@ public class EnemyAI : MonoBehaviour
 
     public bool IsMoving { get; private set; }
     public float HitCooldown => _hitCooldown;
+    public bool IsAttacking => _isAttacking;
     public Transform Player => _player;
     public UnityEvent OnAttack;
     public UnityEvent OnMovingStart;
@@ -61,6 +60,23 @@ public class EnemyAI : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime/* * time*/);
             localRotationTime -= Time.deltaTime;
             yield return null;
+        }
+        yield return null;
+    }
+
+    public IEnumerator LookPlayer(float time, float speedRot)
+    {
+        float localRotationTime = time;
+        while (localRotationTime > 0)
+        {
+            Vector3 direction = _player.transform.position - transform.position;
+            float angle = Vector3.Angle(direction, transform.forward);
+            direction.y = 0;
+
+            if (direction != Vector3.zero)
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * speedRot);
+            localRotationTime -= Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
         }
         yield return null;
     }
@@ -164,8 +180,17 @@ public class EnemyAI : MonoBehaviour
         if (Time.time > _attackTimer)
         {
             Attack();
-            _attackTimer = Time.time + _attackCooldown;
+            _isAttacking = true;
+            //_attackTimer = Time.time + _attackCooldown;
+            StartCoroutine(ResetCooldown());
         }
+    }
+
+    IEnumerator ResetCooldown()
+    {
+        yield return new WaitForSeconds(_attackCooldown);
+        _attackTimer = Time.time + _attackCooldown;
+        _isAttacking = false;
     }
 
     public bool TryFindPlayer()
@@ -214,8 +239,8 @@ public class EnemyAI : MonoBehaviour
     public void FollowPlayer()
     {
         _navMeshAgent.SetDestination(_player.position);
-        Debug.Log("_player.position = " + _player.position);
-        Debug.Log("IsMoving = " + IsMoving);
+        //Debug.Log("_player.position = " + _player.position);
+        //Debug.Log("IsMoving = " + IsMoving);
     }
 
     public void SetDestination(Vector3 target)

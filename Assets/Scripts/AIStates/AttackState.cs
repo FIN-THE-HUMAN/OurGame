@@ -22,7 +22,7 @@ public class AttackState : AIState
             //Debug.Log("AttackState. enemy.CanAttackPlayer()");
             enemy.TryAttackWithCooldown();
         }
-        else
+        else if(!enemy.IsAttacking)
         {
             //Debug.Log("AttackState. not enemy.CanAttackPlayer()");
             enemy.SetState(EnemyState.Chase);

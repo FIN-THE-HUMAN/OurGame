@@ -41,7 +41,7 @@ public class ChaseState : AIState
             }
             else
             {
-                Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
+                //Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
                 //Если игрока нельзя достичь, то надо чилить и искать его
                 enemy.StopMoving();
                 enemy.SetState(EnemyState.Idle);

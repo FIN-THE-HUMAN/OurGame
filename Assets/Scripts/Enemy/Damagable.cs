@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(Rigidbody))]
-//[RequireComponent(typeof(EnemyAI))]
+
 public class Damagable : MonoBehaviour
 {
     public enum DamagableType
