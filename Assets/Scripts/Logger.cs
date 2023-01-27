@@ -8,4 +8,10 @@ public class Logger : MonoBehaviour
     {
         Debug.Log("PlayerDamaged damage = " + damage);
     }
+
+    public void LogPlayerHealth(int maxHealth, int health)
+    {
+        Debug.Log("Player Health = " + health);
+    }
+
 }

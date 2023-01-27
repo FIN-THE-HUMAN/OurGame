@@ -175,6 +175,21 @@ public class EnemyAI : MonoBehaviour
         //}
     }*/
 
+    public void AttackAfterWeaponCooldown()
+    {
+        if (!_isAttacking)
+        {
+            Attack();
+            _isAttacking = true;
+        }
+    }
+
+    public void WaitForWeaponCooldown()
+    {
+        //CooldownPassed.Invoke();
+        _isAttacking = false;
+    }
+
     public void TryAttackWithCooldown()
     {
         if (Time.time > _attackTimer)

@@ -20,7 +20,9 @@ public class AttackState : AIState
         if (enemy.CanAttackPlayer())
         {
             //Debug.Log("AttackState. enemy.CanAttackPlayer()");
-            enemy.TryAttackWithCooldown();
+            //enemy.TryAttackWithCooldown();
+            //enemy.Attack();
+            enemy.AttackAfterWeaponCooldown();
         }
         else if(!enemy.IsAttacking)
         {

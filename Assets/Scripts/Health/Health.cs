@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     public UnityEvent<int, int> OnHealthChanged;
     public UnityEvent OnDamaged;
     public UnityEvent OnHealed;
-    public UnityEvent OnDied;
+    public UnityEvent<GameObject> OnDied;
 
     private void Start()
     {
@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
             else
             {
                 _healthValue = 0;
-                OnDied.Invoke(); Destroy(gameObject);
+                OnDied.Invoke(gameObject); /*Destroy(gameObject);*/
             }
 
             HealthChanged();
