@@ -50,15 +50,15 @@ public class EnemyAI : MonoBehaviour
         OnAttack.Invoke();
     }
 
-    public IEnumerator QuickLookAtPlayer(float time)
+    public IEnumerator QuickLookAtPlayer(float speed)
     {
-        float localRotationTime = time;
+        float localRotationTime = 1;
         while (localRotationTime > 0)
         {
             Vector3 targetDirection = _player.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(targetDirection);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime/* * time*/);
-            localRotationTime -= Time.deltaTime;
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * speed/* * time*/);
+            localRotationTime -= Time.deltaTime * speed;
             yield return null;
         }
         yield return null;
@@ -75,7 +75,7 @@ public class EnemyAI : MonoBehaviour
 
             if (direction != Vector3.zero)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * speedRot);
-            localRotationTime -= Time.deltaTime;
+            localRotationTime -= Time.deltaTime * speedRot;
             yield return new WaitForSeconds(Time.deltaTime);
         }
         yield return null;

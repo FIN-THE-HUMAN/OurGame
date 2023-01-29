@@ -26,7 +26,8 @@ public class HitState : AIState
 
         if (enemy.CanAttackPlayer())
         {
-            enemy.transform.LookAt(enemy.Player);
+            //enemy.transform.LookAt(enemy.Player);
+            enemy.StartCoroutine(enemy.QuickLookAtPlayer(2));
             enemy.SetState(EnemyState.Attack);
         }
         else if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
@@ -35,7 +36,8 @@ public class HitState : AIState
         }
         else
         {
-            enemy.transform.LookAt(enemy.Player);
+            //enemy.transform.LookAt(enemy.Player);
+            enemy.StartCoroutine(enemy.QuickLookAtPlayer(2));
             enemy.SetState(EnemyState.Idle);
         }
     }
