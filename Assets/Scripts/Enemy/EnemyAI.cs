@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     [SerializeField] private Transform _player;
-    [SerializeField] private float _attackCooldown = 1f;
+    private float _attackCooldown = 1f;
     [SerializeField] private float _hitCooldown = 1f;
     [SerializeField] private EnemyAIStateSystem _enemyAIStateSystem;
 
@@ -122,59 +122,6 @@ public class EnemyAI : MonoBehaviour
         UpdateCurrentState();
     }
 
-    /*void Update()
-    {
-        // Обновления состояния противника
-        //UpdateCurrentState();
-
-
-        if (!PathComplete() && !IsMoving)
-            StartMoving();
-
-        if (_navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
-        {
-            _navMeshAgent.SetDestination(_player.position);
-        }
-        else
-        {
-            if (IsMoving)
-            {
-                _navMeshAgent.SetDestination(transform.position);
-                _navMeshAgent.Stop();
-                IsMoving = false;
-
-                StopMoving();
-                OnIdleStart.Invoke();
-
-            }
-
-        }
-
-        if (PathComplete() && IsMoving)
-            StopMoving();
-
-        if (CanAttackPlayer())
-        {
-            if(Time.time > _attackTimer)
-            {
-                Attack();
-                _attackTimer = Time.time + _attackCooldown;
-            }
-        }
-
-        //if(_navMeshAgent.pathStatus == NavMeshPathStatus.PathInvalid)
-        //{
-        //    Debug.Log("NavMeshPathStatus.PathInvalid");
-        //    StopMoving();
-        //}
-
-        //if (_navMeshAgent.pathStatus == NavMeshPathStatus.PathPartial)
-        //{
-        //    Debug.Log("NavMeshPathStatus.PathPartial");
-        //    StopMoving();
-        //}
-    }*/
-
     public void AttackAfterWeaponCooldown()
     {
         if (!_isAttacking)
@@ -186,7 +133,6 @@ public class EnemyAI : MonoBehaviour
 
     public void WaitForWeaponCooldown()
     {
-        //CooldownPassed.Invoke();
         _isAttacking = false;
     }
 
@@ -196,7 +142,6 @@ public class EnemyAI : MonoBehaviour
         {
             Attack();
             _isAttacking = true;
-            //_attackTimer = Time.time + _attackCooldown;
             StartCoroutine(ResetCooldown());
         }
     }
@@ -220,7 +165,6 @@ public class EnemyAI : MonoBehaviour
     public void StartIdle()
     {
         _navMeshAgent.SetDestination(transform.position);
-        //_navMeshAgent.Stop();
         IsMoving = false;
 
         StopMoving();
@@ -254,8 +198,6 @@ public class EnemyAI : MonoBehaviour
     public void FollowPlayer()
     {
         _navMeshAgent.SetDestination(_player.position);
-        //Debug.Log("_player.position = " + _player.position);
-        //Debug.Log("IsMoving = " + IsMoving);
     }
 
     public void SetDestination(Vector3 target)
@@ -277,19 +219,8 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdateCurrentState()
     {
-        //Debug.Log(_enemyAIStateSystem);
-        //Debug.Log(_enemyAIStateSystem.State[_currentState]);
         _enemyAIStateSystem?.State[_currentState].OnStateUpdate(this);
     }
-
-    //public bool CanAttackPlayer()
-    //{
-    //    if (Vector3.Distance(transform.position, _player.position) < meleeDist)
-    //    {
-    //        return true;
-    //    }
-    //    return false;
-    //}
 
     private bool PathComplete()
     {
@@ -336,7 +267,6 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _navMeshAgent == null ? 2 : _navMeshAgent.stoppingDistance);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, meleeDist);
-        //See player radious
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, visDist);
     }

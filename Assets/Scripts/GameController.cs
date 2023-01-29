@@ -1,12 +1,13 @@
 using StarterAssets;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
     [SerializeField] private int _mainSceneIndex;
+
+    public UnityEvent<GameObject> OnEnemyDied;
 
     public void PlayerDied(GameObject player)
     {
@@ -17,6 +18,7 @@ public class GameController : MonoBehaviour
 
     public void EnemyDied(GameObject enemy)
     {
+        OnEnemyDied.Invoke(enemy);
         Destroy(enemy);
     }
 

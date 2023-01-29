@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using static EnemyAI;
+﻿using static EnemyAI;
 
 public class AttackState : AIState
 {
@@ -10,25 +9,18 @@ public class AttackState : AIState
 
     public override void OnStateStart(EnemyAI enemy)
     {
-        //Debug.Log("AttackState.OnStateStart");
+
     }
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
-        //Debug.Log("AttackState.OnStateUpdate");
-        // атаковать с кулдауном
         if (enemy.CanAttackPlayer())
         {
-            //Debug.Log("AttackState. enemy.CanAttackPlayer()");
-            //enemy.TryAttackWithCooldown();
-            //enemy.Attack();
             enemy.AttackAfterWeaponCooldown();
         }
         else if(!enemy.IsAttacking)
         {
-            //Debug.Log("AttackState. not enemy.CanAttackPlayer()");
             enemy.SetState(EnemyState.Chase);
-            // догонять игрока
         }
     }
 }

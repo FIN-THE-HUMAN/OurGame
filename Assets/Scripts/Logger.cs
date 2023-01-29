@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Logger : MonoBehaviour
@@ -12,6 +10,11 @@ public class Logger : MonoBehaviour
     public void LogPlayerHealth(int maxHealth, int health)
     {
         Debug.Log("Player Health = " + health);
+    }
+
+    public void LogPlayerDeath()
+    {
+        Debug.Log("Player Death");
     }
 
 }

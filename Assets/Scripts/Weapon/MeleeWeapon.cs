@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Collider))]
 public class MeleeWeapon : MonoBehaviour
@@ -18,6 +17,7 @@ public class MeleeWeapon : MonoBehaviour
     public float Cooldown => _cooldown;
     public UnityEvent Attaced;
     public UnityEvent CooldownPassed;
+    public UnityEvent OnDamaged;
     private void Start()
     {
         _JustAttackedDamagables = new List<Damagable>(10);
@@ -27,7 +27,6 @@ public class MeleeWeapon : MonoBehaviour
     {
         if (_canAttack)
         {
-            //Debug.Log("OnAttack");
             _canAttack = false;
             _isAttacking = true;
             StartCoroutine(ResetCooldown());
@@ -50,9 +49,9 @@ public class MeleeWeapon : MonoBehaviour
 
         if (damagable != null && damagable.Type == _damagableType && IsAttacking && !_JustAttackedDamagables.Contains(damagable))
         {
-            //Debug.Log("OnTriggerEnter " + (_damagableType == Damagable.DamagableType.Player ? "Player" : "Enemy"));
             damagable.Damage(_damage);
             _JustAttackedDamagables.Add(damagable);
+            OnDamaged.Invoke();
         }
 
     }

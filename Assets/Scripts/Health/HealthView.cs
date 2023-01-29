@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -10,7 +8,7 @@ public class HealthView : MonoBehaviour
 
     private const float coef = 2.553336f;
 
-    void Start()
+    void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }

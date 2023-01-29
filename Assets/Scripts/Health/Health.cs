@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -32,7 +30,7 @@ public class Health : MonoBehaviour
             else
             {
                 _healthValue = 0;
-                OnDied.Invoke(gameObject); /*Destroy(gameObject);*/
+                OnDied.Invoke(gameObject);
             }
 
             HealthChanged();
