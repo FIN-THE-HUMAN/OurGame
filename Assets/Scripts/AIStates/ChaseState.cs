@@ -3,6 +3,7 @@ using static EnemyAI;
 
 public class ChaseState : AIState
 {
+    private float _standartReachDistance = 1;
     public override void OnStateExit(EnemyAI enemy)
     {
 
@@ -11,41 +12,83 @@ public class ChaseState : AIState
     public override void OnStateStart(EnemyAI enemy)
     {
         //Debug.Log("ChaseState.OnStateStart");
-        enemy.StartMoving();
+        enemy.SpeedToRunSpeed();
+        //enemy.StartMoving();
+        enemy.StartRunning();
     }
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
-        //Debug.Log("ChaseState.OnStateUpdate");
-        if (enemy.CanAttackPlayer())
+        if (enemy.CanAttackTarget())
         {
-            //Debug.Log("ChaseState.CanAttackPlayer");
             enemy.StopMoving();
             enemy.SetState(EnemyState.Attack);
         }
         else
         {
-            //Debug.Log("ChaseState. not CanAttackPlayer");
-            //Возможно ли достичь игрока и видим ли мы его
-            if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
+            /*if (enemy.SeeTarget())
             {
-                //Debug.Log("ChaseState. enemy.CanSeePlayer() && enemy.CanReachPlayer()");
-                if (!enemy.IsMoving)
+                enemy.LastTargetPosition = enemy.Target.position;
+                enemy.EyeFollow(enemy.Target);
+                if (enemy.CanReachTarget())
                 {
-                    enemy.StartMoving();
+                    enemy.FollowTarget();
+                }
+                else
+                {
+                    enemy.GoToNearestPoint(enemy.Target);
+                }
+            }
+            else if (enemy.LastTargetPosition != null && Vector3.Distance(enemy.transform.position, enemy.LastTargetPosition.Value) > _standartReachDistance)
+            {
+                enemy.SetDestination(enemy.LastTargetPosition.Value);
+            }
+            else
+            {
+                enemy.LastTargetPosition = null;
+
+                if (enemy.MustPatrol)
+                {
+                    enemy.SetState(EnemyState.Patroling);
+                }
+                else
+                {
+                    enemy.StopMoving();
+                    enemy.SetState(EnemyState.Idle);
+                }
+            }*/
+            
+            //Возможно ли достичь игрока и видим ли мы его
+            if (enemy.SeeTarget() && enemy.CanReachTarget())
+            {
+
+                if (!enemy.IsRunning)
+                {
+                    //enemy.StartMoving();
+                    enemy.StartRunning();
                 }
 
                 // Нормальный метод преследовтьния игрока
                 //_enemy.TrySetDestination(_enemy.Player.position);
-                enemy.FollowPlayer();
+                enemy.FollowTarget();
             }
             else
             {
                 //Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
-                //Если игрока нельзя достичь, то надо чилить и искать его
-                enemy.StopMoving();
-                enemy.SetState(EnemyState.Idle);
+                //Если игрока нельзя достичь, то надо чилить и искать его. Или патрулировать местность
+                if (enemy.MustPatrol)
+                {
+                    enemy.SetState(EnemyState.Patroling);
+                }
+                else
+                {
+                    enemy.StopMoving();
+                    enemy.SetState(EnemyState.Idle);
+                }
+
             }
+
         }
     }
 }
+

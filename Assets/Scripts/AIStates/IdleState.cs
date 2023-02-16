@@ -19,7 +19,7 @@ public class IdleState : AIState
         //if (enemy.TryFindPlayer())
         //    enemy.SetState(EnemyState.Chase);
         //Debug.Log("IdleState.OnStateUpdate");
-        if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
+        if (enemy.SeeTarget() && enemy.CanReachTarget())
         {
             //Debug.Log("CanSeePlayer & CanReachPlayer");
             enemy.SetState(EnemyState.Chase);

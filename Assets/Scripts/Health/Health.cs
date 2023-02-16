@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.Events;
+using NaughtyAttributes;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private int MaxHealth = 300;
+
+    [ProgressBar("Health", nameof(MaxHealth), EColor.Green)]
     [SerializeField] private int _healthValue;
 
     public UnityEvent<int, int> OnHealthChanged;
@@ -13,6 +16,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        _healthValue = MaxHealth;
         HealthChanged();
     }
 

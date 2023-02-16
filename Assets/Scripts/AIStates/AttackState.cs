@@ -14,7 +14,7 @@ public class AttackState : AIState
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
-        if (enemy.CanAttackPlayer())
+        if (enemy.CanAttackTarget())
         {
             enemy.AttackAfterWeaponCooldown();
         }

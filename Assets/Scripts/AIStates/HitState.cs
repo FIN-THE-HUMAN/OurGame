@@ -24,13 +24,13 @@ public class HitState : AIState
     {
         yield return new WaitForSeconds(enemy.HitCooldown);
 
-        if (enemy.CanAttackPlayer())
+        if (enemy.CanAttackTarget())
         {
             //enemy.transform.LookAt(enemy.Player);
             enemy.StartCoroutine(enemy.QuickLookAtPlayer(2));
             enemy.SetState(EnemyState.Attack);
         }
-        else if (enemy.CanSeePlayer() && enemy.CanReachPlayer())
+        else if (enemy.SeeTarget() && enemy.CanReachTarget())
         {
             enemy.SetState(EnemyState.Chase);
         }
