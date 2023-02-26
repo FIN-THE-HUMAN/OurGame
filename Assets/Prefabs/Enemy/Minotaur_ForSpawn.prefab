@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 7993387104480649825}
   - component: {fileID: 7993387104480649828}
   m_Layer: 0
-  m_Name: Minotaur_NotPatroling
+  m_Name: Minotaur_ForSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,8 +3323,10 @@ MonoBehaviour:
   _targetType: 1
   _visionDistance: 25
   _visionAngle: 180
-  _mustPatrol: 0
-  _patrolingPath:
+  _mustPatrol: 1
+  _standartReachDistance: 1
+  _currentState: 5
+  PatrolingPath:
     _points: []
   OnAttack:
     m_PersistentCalls:

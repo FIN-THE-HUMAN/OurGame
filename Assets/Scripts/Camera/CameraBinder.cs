@@ -8,7 +8,7 @@ public class CameraBinder : MonoBehaviour
 
     private void Awake()
     {
-        _camera = FindObjectOfType<CharacterController>().gameObject;
+        _camera = Camera.main.gameObject;
     }
 
     private void Update()

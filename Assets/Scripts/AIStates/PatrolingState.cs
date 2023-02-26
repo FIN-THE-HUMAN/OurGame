@@ -1,12 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using static EnemyAI;
 
 public class PatrolingState : AIState
 {
-    private float _standartReachDistance = 1;
-
     public override void OnStateExit(EnemyAI enemy)
     {
 
@@ -20,9 +16,18 @@ public class PatrolingState : AIState
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
-        if (enemy.SeeTarget() && enemy.CanReachTarget())
+        if (enemy.SeeTarget())
         {
-            enemy.SetState(EnemyState.Chase);
+            if (enemy.CanReachTarget())
+            {
+                enemy.SetState(EnemyState.Chase);
+            }
+            else
+            {
+                //enemy.SetState(EnemyState.KeepEyeContacting);
+                //enemy.ReturnToUsualState();
+            }
+
         }
         else
         {
@@ -31,9 +36,9 @@ public class PatrolingState : AIState
                 enemy.StartWalking();
             }
 
-            enemy.SetDestination(enemy.PatrolingPath.TempTargetPoint);
+            enemy.SetDestination(enemy.PatrolingPath.GetTempTargetPoint());
 
-            if (Vector3.Distance(enemy.transform.position, enemy.PatrolingPath.TempTargetPoint) < _standartReachDistance)
+            if (enemy.Reached(enemy.PatrolingPath.GetTempTargetPoint()) /*Vector3.Distance(enemy.transform.position, enemy.PatrolingPath.GetTempTargetPoint()) < enemy.StandartReachDistance*/)
             {
                 enemy.PatrolingPath.Next();
             }

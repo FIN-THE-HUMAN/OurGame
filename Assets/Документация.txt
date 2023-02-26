@@ -1,0 +1,10 @@
+1. EnemyAI
+Исскустенный интеллект врага на данный момент работает по следующему принципу.
+Ссылка на target получается в методе Start.
+        строка 63 в файле EnemyAI. _target = FindObjectOfType<CharacterController>().transform;
+
+Таким образом мы получаем ссылку на одного игрока.
+В методе FieldOfViewCheck происходит каст сферы. 
+Из всех попавших в сферу объектов со скриптом Damagable и подходящих по типу (d.GetComponent<Damagable>().Type == TargetType) выбирается одна цель (первая в списке).
+Если цель попадает в угол зрения (Vector3.Angle(transform.forward, directionToTarget) < _visionAngle / 2), 
+то необходимо проверить через Physics.Raycast есть ли между глазами противника и целью препятствия.

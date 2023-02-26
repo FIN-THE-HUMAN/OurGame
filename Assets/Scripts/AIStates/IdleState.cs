@@ -1,4 +1,3 @@
-using UnityEngine;
 using static EnemyAI;
 
 public class IdleState : AIState
@@ -10,19 +9,21 @@ public class IdleState : AIState
 
     public override void OnStateStart(EnemyAI enemy)
     {
-        //Debug.Log("IdleState.OnStateStart");
         enemy.StartIdle();
     }
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
-        //if (enemy.TryFindPlayer())
-        //    enemy.SetState(EnemyState.Chase);
-        //Debug.Log("IdleState.OnStateUpdate");
-        if (enemy.SeeTarget() && enemy.CanReachTarget())
+        if (enemy.SeeTarget())
         {
-            //Debug.Log("CanSeePlayer & CanReachPlayer");
-            enemy.SetState(EnemyState.Chase);
+            if (enemy.CanReachTarget())
+            {
+                enemy.SetState(EnemyState.Chase);
+            }
+            else
+                //enemy.SetState(EnemyState.KeepEyeContacting);
+                enemy.ReturnToUsualState();
+
         }
     }
 }

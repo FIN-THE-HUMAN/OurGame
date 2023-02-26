@@ -22,6 +22,21 @@ public class GameController : MonoBehaviour
         Destroy(enemy);
     }
 
+    public void ListenEnemyDied(EnemyAI enemy)
+    {
+
+        if(enemy.TryGetComponent(out Health health))
+        {
+            health.OnDied.AddListener((e) => EnemyDied(enemy.gameObject));
+        }
+
+    }
+
+    public void ListenEnemyDied(Health enemy)
+    {
+        enemy.OnDied.AddListener((e) => EnemyDied(enemy.gameObject));
+    }
+
     public void ExitGame()
     {
         Application.Quit();

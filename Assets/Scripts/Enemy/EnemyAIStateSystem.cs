@@ -7,7 +7,6 @@ public class EnemyAIStateSystem : MonoBehaviour
 {
     public Dictionary<EnemyState, AIState> State { get; private set; }
 
-
     private void Awake()
     {
         State = new Dictionary<EnemyState, AIState> {
@@ -15,7 +14,10 @@ public class EnemyAIStateSystem : MonoBehaviour
             { EnemyState.Chase, new ChaseState() },
             { EnemyState.Attack, new AttackState() },
             { EnemyState.Hit, new HitState()},
-            { EnemyState.Patroling, new PatrolingState()}
+            { EnemyState.Patroling, new PatrolingState()},
+            { EnemyState.JustSpawned, new JustSpawnedState()},
+            { EnemyState.Seek, new SeekState()},
+            { EnemyState.KeepEyeContacting, new KeepEyeContactingState()}
         };
     }
 }

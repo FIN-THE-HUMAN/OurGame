@@ -1,10 +1,8 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
-using NaughtyAttributes;
 using System.Linq;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -12,7 +10,7 @@ public class EnemyAI : MonoBehaviour
 {
     public enum EnemyState
     {
-        Idle, Chase, Attack, Hit, Patroling
+        Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting
     }
 
     [SerializeField] private Transform _eyePoint;
@@ -23,19 +21,18 @@ public class EnemyAI : MonoBehaviour
     [Range(0, 360)]
     [SerializeField] private float _visionAngle = 180; //Angle of the cone vision
     [SerializeField] private bool _mustPatrol;
-    [ShowIf(nameof(_mustPatrol))]
-    [SerializeField] private PatrolingPath _patrolingPath;
+    [SerializeField] private float _standartReachDistance = 2;
+
     private Transform _target;
     private EnemyAIStateSystem _enemyAIStateSystem;
-    private EnemyState _currentState;
     private NavMeshAgent _navMeshAgent;
     private bool _isAttacking;
     private float _rotationTime = 1;
 
-
     public const float WALK_SPEED = 3;
     public const float RUN_SPEED = 8;
 
+    public EnemyState _currentState;
     public Vector3? LastTargetPosition = null;
     public bool IsWalking { get; private set; }
     public bool IsRunning { get; private set; } 
@@ -43,10 +40,13 @@ public class EnemyAI : MonoBehaviour
     public bool IsAttacking => _isAttacking;
     public bool MustPatrol => _mustPatrol;
     public Transform Target => _target;
-    public PatrolingPath PatrolingPath => _patrolingPath;
+    public PatrolingPath PatrolingPath;
     public Damagable.DamagableType TargetType => _targetType;
     public float VisionDistance => _visionDistance;
     public float VisionAngle => _visionAngle;
+
+    public float StandartReachDistance => _standartReachDistance;
+    public Vector3 Center => transform.position.AddY(_navMeshAgent.height / 2);
 
     public UnityEvent OnAttack;
     public UnityEvent OnMovingStart;
@@ -62,11 +62,10 @@ public class EnemyAI : MonoBehaviour
         _target = FindObjectOfType<CharacterController>().transform;
         _enemyAIStateSystem = FindObjectOfType<EnemyAIStateSystem>();
 
+        if (_currentState == EnemyState.JustSpawned) return;
+
         if (_mustPatrol)
         {
-            if (_patrolingPath == null) throw new InvalidOperationException("if Enemy Set (MustPatrol = true) then PatrolingPath must not be null");
-            if (_patrolingPath.Points == null) throw new InvalidOperationException("if Enemy Set (MustPatrol = true) then PatrolingPath.Points must not be null");
-            if (_patrolingPath.Points.Count < 2) throw new InvalidOperationException("if Enemy Set (MustPatrol = true) then PatrolingPath must collect minimum 2 points");
             _currentState = EnemyState.Patroling;
         }
         else
@@ -79,6 +78,12 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         UpdateCurrentState();
+    }
+
+    public bool Reached(Vector3 position)
+    {
+        return Vector3.Distance(transform.position, position) < _standartReachDistance || 
+            Vector3.Distance(Center, position) < _standartReachDistance;
     }
 
     public void SpeedToWalkSpeed()
@@ -163,6 +168,7 @@ public class EnemyAI : MonoBehaviour
         IsWalking = false;
         IsRunning = true;
         OnRunningStart.Invoke();
+        Debug.Log("StartRunning"); 
     }
 
     public void AttackAfterWeaponCooldown()
@@ -190,31 +196,21 @@ public class EnemyAI : MonoBehaviour
 
     public bool CanReachTarget()
     {
-        _navMeshAgent.SetDestination(_target.position);
-        if (_navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
-        {
-            _navMeshAgent.SetDestination(transform.position);
-            return true;
-        }
-        _navMeshAgent.SetDestination(transform.position);
-        return false;
+        return CanReachPosition(_target.position);
     }
 
-    /// <summary>
-    /// Неправилный метод, необходимо осуществлять правильную проверку возможности достижения игрока
-    /// </summary>
-    /// <param name="position"></param>
-    public void TrySetDestination(Vector3 position)
+    public bool CanReachPosition(Vector3 position)
     {
-        if (_navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
-        {
-            _navMeshAgent.SetDestination(position);
-        }
+        Vector3 targetPos = position;
+        NavMeshPath path = new NavMeshPath();
+        _navMeshAgent.CalculatePath(targetPos, path);
+        return (path.status == NavMeshPathStatus.PathComplete);
+
     }
 
     public void FollowTarget()
     {
-        _navMeshAgent.SetDestination(_target.position);
+        SetDestination(_target.position);
     }
 
     public void SetDestination(Vector3 target)
@@ -224,9 +220,9 @@ public class EnemyAI : MonoBehaviour
 
     public void SetState(EnemyState state)
     {
-        _enemyAIStateSystem.State[_currentState].OnStateExit(this);
+        _enemyAIStateSystem?.State[_currentState]?.OnStateExit(this);
         _currentState = state;
-        _enemyAIStateSystem.State[_currentState].OnStateStart(this);
+        _enemyAIStateSystem?.State[_currentState]?.OnStateStart(this);
     }
 
     public void SetStateHit()
@@ -239,100 +235,73 @@ public class EnemyAI : MonoBehaviour
         _enemyAIStateSystem?.State[_currentState].OnStateUpdate(this);
     }
 
-    private bool PathComplete()
+    public Vector3 GetClosestReachablePosition(Vector3 position)
     {
-        if (_navMeshAgent.pathStatus == NavMeshPathStatus.PathPartial) return true;
-
-        if (!_navMeshAgent.pathPending)
+        NavMeshHit hit;
+        if(NavMesh.SamplePosition(position, out hit, _standartReachDistance, NavMesh.AllAreas))
         {
-            if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-            {
-                if (_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0)
-                {
-                    return true;
-                }
-            }
+            return hit.position;
         }
-        return false;
+        return position;
     }
 
     public bool SeeTarget()
     {
-        //Vector3 direction = _target.position - transform.position;
-        //float angle = Vector3.Angle(direction, transform.forward);
-
-        //if (direction.magnitude < _visionDistance && angle < _visionAngle)
-        //{
-        //    return true;
-        //}
-        //return false;
-
-        //return TrySeeTarget();
-        return FieldOfViewCheck();
-    }
-
-    public bool canSeePlayer;
-    public LayerMask targetMask;
-    public LayerMask obstructionMask;
-
-    public bool TrySeeTarget()
-    {
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, _visionDistance, targetMask);
 
-        if (rangeChecks.Length != 0 && _target == null)
+        if (rangeChecks.Length != 0)
         {
             var damagables = rangeChecks.Where(e => e.GetComponent<Damagable>());
             if (damagables.Count() <= 0)
             {
-                _target = null;
+                Debug.Log("1");
                 return false;
             }
             //Поменять на выбор не первого, а ближайшего
             var potentialTargets = damagables.Where(d => d.GetComponent<Damagable>().Type == TargetType);
             if (potentialTargets.Count() <= 0)
             {
-                _target = null;
+                Debug.Log("2");
                 return false;
             }
-            _target = potentialTargets.FirstOrDefault().transform;
+            var target = potentialTargets.FirstOrDefault().transform;
 
-            Vector3 directionToTarget = (_target.position - transform.position).normalized;
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
 
             if (Vector3.Angle(transform.forward, directionToTarget) < _visionAngle / 2)
             {
-                float distanceToTarget = Vector3.Distance(transform.position, _target.position);
+                float distanceToTarget = Vector3.Distance(_eyePoint.transform.position, target.position);
 
-                if (/*!_navMeshAgent.Raycast(target.position, out NavMeshHit hit)*/ !Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
-                {
-                    //LastTargetPosition = _target.position;
+                if (!Physics.Raycast(_eyePoint.transform.position, directionToTarget, distanceToTarget, obstructionMask))
                     canSeePlayer = true;
-                }
                 else
                 {
-                    _target = null;
+                    Debug.Log("3");
                     canSeePlayer = false;
                 }
-
             }
             else
             {
-                _target = null;
+                Debug.Log("4");
                 canSeePlayer = false;
             }
-
         }
         else if (canSeePlayer)
         {
-            _target = null;
+            Debug.Log("5");
             canSeePlayer = false;
         }
-
+        if(!canSeePlayer) Debug.Log("6");
         return canSeePlayer;
     }
 
-    public void EyeFollow(Transform target)
+    public bool canSeePlayer;
+    public LayerMask targetMask;
+    public LayerMask obstructionMask;
+
+    public void EyeFollow(Vector3 target)
     {
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(_target.transform.position - target.position), Time.deltaTime);
+        transform.LookAt(target.SetY(transform.position.y)); 
     }
 
     public void GoToNearestPoint(Transform target)
@@ -340,38 +309,6 @@ public class EnemyAI : MonoBehaviour
         NavMeshHit hit;
         _navMeshAgent.FindClosestEdge(out hit);
         _navMeshAgent.SetDestination(hit.position);
-    }
-
-    private bool FieldOfViewCheck()
-    {
-        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, _visionDistance, targetMask);
-
-        if (rangeChecks.Length != 0)
-        {
-            var damagables = rangeChecks.Where(e => e.GetComponent<Damagable>());
-            if (damagables.Count() <= 0) return false;
-            //Поменять на выбор не первого, а ближайшего
-            var potentialTargets = damagables.Where(d => d.GetComponent<Damagable>().Type == TargetType);
-            if (potentialTargets.Count() <= 0) return false;
-            var target = potentialTargets.FirstOrDefault().transform;
-
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
-
-            if (Vector3.Angle(transform.forward, directionToTarget) < _visionAngle / 2)
-            {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
-
-                if (/*!_navMeshAgent.Raycast(target.position, out NavMeshHit hit)*/ !Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
-                    canSeePlayer = true;
-                else
-                    canSeePlayer = false;
-            }
-            else
-                canSeePlayer = false;
-        }
-        else if (canSeePlayer)
-            canSeePlayer = false;
-        return canSeePlayer;
     }
 
     public bool CanAttackTarget()
@@ -384,6 +321,19 @@ public class EnemyAI : MonoBehaviour
         return false;
     }
 
+    public void ReturnToUsualState()
+    {
+        if (MustPatrol)
+        {
+            SetState(EnemyState.Patroling);
+        }
+        else
+        {
+            StopMoving();
+            SetState(EnemyState.Idle);
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
@@ -392,5 +342,11 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _meleeDistance);
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, _visionDistance);
+        if(_currentState == EnemyState.Seek)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, _standartReachDistance);
+            Gizmos.DrawWireSphere(Center, _standartReachDistance);
+        }
     }
 }

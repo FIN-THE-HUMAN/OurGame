@@ -30,9 +30,16 @@ public class HitState : AIState
             enemy.StartCoroutine(enemy.QuickLookAtPlayer(2));
             enemy.SetState(EnemyState.Attack);
         }
-        else if (enemy.SeeTarget() && enemy.CanReachTarget())
+        else if (enemy.SeeTarget())
         {
-            enemy.SetState(EnemyState.Chase);
+            if (enemy.CanReachTarget())
+            {
+                enemy.SetState(EnemyState.Chase);
+            }
+            else
+                //enemy.SetState(EnemyState.KeepEyeContacting);
+                enemy.ReturnToUsualState();
+
         }
         else
         {
