@@ -16,7 +16,11 @@ public class PatrolingState : AIState
 
     public override void OnStateUpdate(EnemyAI enemy)
     {
+<<<<<<< Updated upstream
         if (enemy.SeeTarget())
+=======
+        if (enemy.PlayerInVisionDistanceRadious()/*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
         {
             if (enemy.CanReachTarget())
             {
@@ -26,6 +30,21 @@ public class PatrolingState : AIState
             {
                 //enemy.SetState(EnemyState.KeepEyeContacting);
                 //enemy.ReturnToUsualState();
+<<<<<<< Updated upstream
+=======
+
+                if (!enemy.IsWalking)
+                {
+                    enemy.StartWalking();
+                }
+
+                enemy.SetDestination(enemy.PatrolingPath.GetTempTargetPoint());
+
+                if (enemy.Reached(enemy.PatrolingPath.GetTempTargetPoint()) /*Vector3.Distance(enemy.transform.position, enemy.PatrolingPath.GetTempTargetPoint()) < enemy.StandartReachDistance*/)
+                {
+                    enemy.PatrolingPath.Next();
+                }
+>>>>>>> Stashed changes
             }
 
         }

@@ -17,7 +17,12 @@ public class EnemyAIStateSystem : MonoBehaviour
             { EnemyState.Patroling, new PatrolingState()},
             { EnemyState.JustSpawned, new JustSpawnedState()},
             { EnemyState.Seek, new SeekState()},
+<<<<<<< Updated upstream
             { EnemyState.KeepEyeContacting, new KeepEyeContactingState()}
+=======
+            { EnemyState.KeepEyeContacting, new KeepEyeContactingState()},
+            { EnemyState.Dead, new DeadState() }
+>>>>>>> Stashed changes
         };
     }
 }

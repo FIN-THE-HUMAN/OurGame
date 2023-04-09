@@ -10,7 +10,11 @@ public class EnemyAI : MonoBehaviour
 {
     public enum EnemyState
     {
+<<<<<<< Updated upstream
         Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting
+=======
+        Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting, Dead
+>>>>>>> Stashed changes
     }
 
     [SerializeField] private Transform _eyePoint;
@@ -20,7 +24,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _visionDistance = 25; //Distance of vision
     [Range(0, 360)]
     [SerializeField] private float _visionAngle = 180; //Angle of the cone vision
+<<<<<<< Updated upstream
     [SerializeField] private bool _mustPatrol;
+=======
+>>>>>>> Stashed changes
     [SerializeField] private float _standartReachDistance = 2;
 
     private Transform _target;
@@ -32,13 +39,18 @@ public class EnemyAI : MonoBehaviour
     public const float WALK_SPEED = 3;
     public const float RUN_SPEED = 8;
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     public EnemyState _currentState;
     public Vector3? LastTargetPosition = null;
     public bool IsWalking { get; private set; }
     public bool IsRunning { get; private set; } 
     public float HitCooldown => _hitCooldown;
     public bool IsAttacking => _isAttacking;
-    public bool MustPatrol => _mustPatrol;
+    public bool MustPatrol;
+
     public Transform Target => _target;
     public PatrolingPath PatrolingPath;
     public Damagable.DamagableType TargetType => _targetType;
@@ -61,10 +73,21 @@ public class EnemyAI : MonoBehaviour
 
         _target = FindObjectOfType<CharacterController>().transform;
         _enemyAIStateSystem = FindObjectOfType<EnemyAIStateSystem>();
+<<<<<<< Updated upstream
 
         if (_currentState == EnemyState.JustSpawned) return;
 
         if (_mustPatrol)
+=======
+        if (_enemyAIStateSystem == null)
+        {
+            throw new InvalidOperationException("На сцене отсутствует система контроля состояний врага");
+        }
+
+        if (_currentState == EnemyState.JustSpawned) return;
+
+        if (MustPatrol)
+>>>>>>> Stashed changes
         {
             _currentState = EnemyState.Patroling;
         }
@@ -109,7 +132,7 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 targetDirection = _target.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(targetDirection);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * speed/* * time*/);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * speed);
             localRotationTime -= Time.deltaTime * speed;
             yield return null;
         }
@@ -159,6 +182,10 @@ public class EnemyAI : MonoBehaviour
     {
         IsWalking = false;
         IsRunning = false;
+
+        //_navMeshAgent.SetDestination(transform.position);
+        //StopMoving();
+
         OnMovingStop.Invoke();
 
     }
@@ -228,6 +255,12 @@ public class EnemyAI : MonoBehaviour
     public void SetStateHit()
     {
         SetState(EnemyState.Hit);
+    }
+
+    public void SetUsualState()
+    {
+        if (MustPatrol) SetState(EnemyState.Patroling);
+        else SetState(EnemyState.Idle);
     }
 
     private void UpdateCurrentState()
@@ -334,6 +367,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    public bool PlayerInVisionDistanceRadious()
+    {
+        if (Vector3.Distance(transform.position, _target.transform.position) < _visionDistance)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+>>>>>>> Stashed changes
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

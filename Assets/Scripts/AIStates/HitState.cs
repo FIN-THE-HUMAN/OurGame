@@ -11,6 +11,7 @@ public class HitState : AIState
 
     public override void OnStateStart(EnemyAI enemy)
     {
+        enemy.SetDestination(enemy.transform.position);
         enemy.StopMoving();
         enemy.StartCoroutine(HitCooldown(enemy));
     }
@@ -26,11 +27,14 @@ public class HitState : AIState
 
         if (enemy.CanAttackTarget())
         {
-            //enemy.transform.LookAt(enemy.Player);
             enemy.StartCoroutine(enemy.QuickLookAtPlayer(2));
             enemy.SetState(EnemyState.Attack);
         }
+<<<<<<< Updated upstream
         else if (enemy.SeeTarget())
+=======
+        else if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
         {
             if (enemy.CanReachTarget())
             {

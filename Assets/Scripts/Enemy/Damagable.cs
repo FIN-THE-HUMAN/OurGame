@@ -2,8 +2,6 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(Rigidbody))]
-
 public class Damagable : MonoBehaviour
 {
     public enum DamagableType

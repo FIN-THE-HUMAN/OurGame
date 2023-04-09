@@ -10,8 +10,11 @@ public class ChaseState : AIState
 
     public override void OnStateStart(EnemyAI enemy)
     {
+<<<<<<< Updated upstream
 
         Debug.Log("ChaseState.OnStateStart");
+=======
+>>>>>>> Stashed changes
         enemy.SpeedToRunSpeed();
         //enemy.StartMoving();
         enemy.StartRunning();
@@ -25,9 +28,15 @@ public class ChaseState : AIState
             enemy.SetState(EnemyState.Attack);
         }
         else
+<<<<<<< Updated upstream
         {    
             //Возможно ли достичь игрока и видим ли мы его
             if (enemy.SeeTarget())
+=======
+        {
+            //Возможно ли достичь игрока и видим ли мы его
+            if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
             {
                 if (enemy.CanReachTarget())
                 {
@@ -53,16 +62,25 @@ public class ChaseState : AIState
                 //_enemy.TrySetDestination(_enemy.Player.position);
 
 
+<<<<<<< Updated upstream
             }
             else if (enemy.LastTargetPosition.HasValue)
             {
                 Debug.Log("enemy.SetState(EnemyState.Seek);");
                 enemy.SetState(EnemyState.Seek);
+=======
+>>>>>>> Stashed changes
             }
+            //else if (enemy.LastTargetPosition.HasValue)
+            //{
+
+            //    enemy.SetState(EnemyState.Seek);
+            //}
             else
             {
                 //Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
                 //Если игрока нельзя достичь, то надо чилить и искать его. Или патрулировать местность
+<<<<<<< Updated upstream
                 Debug.Log("else");
                 if (enemy.MustPatrol)
                 {
@@ -73,6 +91,10 @@ public class ChaseState : AIState
                     enemy.StopMoving();
                     enemy.SetState(EnemyState.Idle);
                 }
+=======
+
+                enemy.ReturnToUsualState();
+>>>>>>> Stashed changes
 
             }
 

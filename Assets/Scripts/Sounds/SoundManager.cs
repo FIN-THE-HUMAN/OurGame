@@ -1,10 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
+    [SerializeField] private AudioClip _enemyDeath;
+
+    public void PlaySound()
+    {
+        var sound = new GameObject("Sound");
+        var audioSource = sound.AddComponent<AudioSource>();
+        audioSource.PlayOneShot(_enemyDeath);
+    }
+
     private AudioSource _audioSource;
 
     public bool CanPlay { get; set; } = true;
