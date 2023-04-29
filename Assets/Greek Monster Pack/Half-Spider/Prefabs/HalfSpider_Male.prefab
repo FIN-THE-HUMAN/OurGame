@@ -801,7 +801,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215395017147446159}
-  m_LocalRotation: {x: -0.0000000054700853, y: -0.000000014901161, z: -0.0000000203511, w: 1}
+  m_LocalRotation: {x: -0.0000000054700853, y: -0.000000014901161, z: -0.0000000203511,
+    w: 1}
   m_LocalPosition: {x: -7.351177e-10, y: 0.01, z: -3.4074718e-10}
   m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
@@ -2054,7 +2055,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909202985978300353}
-  m_LocalRotation: {x: -0.6622257, y: -0.0000000017107664, z: -0.0000000024451812, w: 0.7493044}
+  m_LocalRotation: {x: -0.6622257, y: -0.0000000017107664, z: -0.0000000024451812,
+    w: 0.7493044}
   m_LocalPosition: {x: 8.881784e-18, y: -0.000572702, z: -0.00051842735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6827,7 +6829,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3176285287632863375}
-  m_LocalRotation: {x: 0.000000043984947, y: 0.0000000074505797, z: 0.000000007982723, w: 1}
+  m_LocalRotation: {x: 0.000000043984947, y: 0.0000000074505797, z: 0.000000007982723,
+    w: 1}
   m_LocalPosition: {x: 1.6116848e-10, y: 0.01, z: -2.8985276e-11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9385,7 +9388,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3580025378402810672
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9402,7 +9405,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &3580025378402810687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9478,7 +9481,8 @@ MonoBehaviour:
     hairProfile: {fileID: 11400000, guid: b2047c11bd5ddc441a097300deced57b, type: 2}
     beardProfile: {fileID: 11400000, guid: ece8efe1872bd3c4a8bf940276833e39, type: 2}
     eyebrowProfile: {fileID: 11400000, guid: c3653a261bd75044f8f29b3a3e2999d6, type: 2}
-    hairMaterialProfile: {fileID: 11400000, guid: 892be67492b5d534bbd7503f6bbd7608, type: 2}
+    hairMaterialProfile: {fileID: 11400000, guid: 892be67492b5d534bbd7503f6bbd7608,
+      type: 2}
     parentageManager: {fileID: 3580025378402810683}
     hairGroup: {fileID: 3577523924585940636}
     activeHairObject: {fileID: 7261782613889702901}
@@ -9508,7 +9512,8 @@ MonoBehaviour:
     - White
     hairMaterialIndex: 1
   eyeSettings:
-    eyeMaterialProfile: {fileID: 11400000, guid: 784edc8d59681974fb8f9ec475feff35, type: 2}
+    eyeMaterialProfile: {fileID: 11400000, guid: 784edc8d59681974fb8f9ec475feff35,
+      type: 2}
     eyeUsableMaterials:
     - Blue
     - Light Blue

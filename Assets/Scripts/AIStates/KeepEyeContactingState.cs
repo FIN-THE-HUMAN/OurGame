@@ -16,7 +16,11 @@ public class KeepEyeContactingState : AIState
     public override void OnStateUpdate(EnemyAI enemy)
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (enemy.SeeTarget())
+=======
+        if (enemy.PlayerInVisionDistanceRadious()/*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
 =======
         if (enemy.PlayerInVisionDistanceRadious()/*enemy.SeeTarget()*/)
 >>>>>>> Stashed changes

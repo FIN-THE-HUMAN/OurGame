@@ -11,8 +11,11 @@ public class ChaseState : AIState
     public override void OnStateStart(EnemyAI enemy)
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         Debug.Log("ChaseState.OnStateStart");
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         enemy.SpeedToRunSpeed();
@@ -36,6 +39,9 @@ public class ChaseState : AIState
         {
             //Возможно ли достичь игрока и видим ли мы его
             if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             {
                 if (enemy.CanReachTarget())
@@ -63,6 +69,7 @@ public class ChaseState : AIState
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             }
             else if (enemy.LastTargetPosition.HasValue)
             {
@@ -71,6 +78,9 @@ public class ChaseState : AIState
 =======
 >>>>>>> Stashed changes
             }
+=======
+            }
+>>>>>>> Stashed changes
             //else if (enemy.LastTargetPosition.HasValue)
             //{
 
@@ -80,6 +90,7 @@ public class ChaseState : AIState
             {
                 //Debug.Log("ChaseState. not enemy.CanSeePlayer() && enemy.CanReachPlayer()");
                 //Если игрока нельзя достичь, то надо чилить и искать его. Или патрулировать местность
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
                 Debug.Log("else");
                 if (enemy.MustPatrol)
@@ -91,6 +102,10 @@ public class ChaseState : AIState
                     enemy.StopMoving();
                     enemy.SetState(EnemyState.Idle);
                 }
+=======
+
+                enemy.ReturnToUsualState();
+>>>>>>> Stashed changes
 =======
 
                 enemy.ReturnToUsualState();

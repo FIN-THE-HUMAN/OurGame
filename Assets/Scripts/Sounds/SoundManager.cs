@@ -9,6 +9,10 @@ public class SoundManager : MonoBehaviour
     {
         var sound = new GameObject("Sound");
         var audioSource = sound.AddComponent<AudioSource>();
+<<<<<<< Updated upstream
+=======
+        audioSource.volume = PlayerPrefs.GetFloat("SoundVolume");
+>>>>>>> Stashed changes
         audioSource.PlayOneShot(_enemyDeath);
     }
 
@@ -23,6 +27,10 @@ public class SoundManager : MonoBehaviour
 
     public void PlayIfCanPlay()
     {
-        if (CanPlay) _audioSource.Play();
+        if (CanPlay)
+        {
+            _audioSource.volume = PlayerPrefs.GetFloat("SoundVolume");
+            _audioSource.Play();
+        }
     }
 }

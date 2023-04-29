@@ -17,7 +17,11 @@ public class PatrolingState : AIState
     public override void OnStateUpdate(EnemyAI enemy)
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (enemy.SeeTarget())
+=======
+        if (enemy.PlayerInVisionDistanceRadious()/*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
 =======
         if (enemy.PlayerInVisionDistanceRadious()/*enemy.SeeTarget()*/)
 >>>>>>> Stashed changes
@@ -31,7 +35,10 @@ public class PatrolingState : AIState
                 //enemy.SetState(EnemyState.KeepEyeContacting);
                 //enemy.ReturnToUsualState();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
                 if (!enemy.IsWalking)
                 {
@@ -44,6 +51,9 @@ public class PatrolingState : AIState
                 {
                     enemy.PatrolingPath.Next();
                 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             }
 

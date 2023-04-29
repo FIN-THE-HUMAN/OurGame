@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour
     public void ListenEnemyDied(Health enemy)
     {
         enemy.OnDied.AddListener((e) => EnemyDied(enemy.gameObject));
+<<<<<<< Updated upstream
     }
 
     public void ListenEnemyDied(EnemyAI enemy)
@@ -80,6 +81,8 @@ public class GameController : MonoBehaviour
     public void ListenEnemyDied(Health enemy)
     {
         enemy.OnDied.AddListener((e) => EnemyDied(enemy.gameObject));
+=======
+>>>>>>> Stashed changes
     }
 
     public void ExitGame()
@@ -92,6 +95,14 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(_mainSceneIndex);
     }
 
+<<<<<<< Updated upstream
+=======
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+>>>>>>> Stashed changes
     public void PlaySound(Vector3 position, AudioClip _sound)
     {
         var sound = new GameObject("Sound");

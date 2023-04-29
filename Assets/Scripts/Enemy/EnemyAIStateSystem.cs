@@ -18,7 +18,12 @@ public class EnemyAIStateSystem : MonoBehaviour
             { EnemyState.JustSpawned, new JustSpawnedState()},
             { EnemyState.Seek, new SeekState()},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             { EnemyState.KeepEyeContacting, new KeepEyeContactingState()}
+=======
+            { EnemyState.KeepEyeContacting, new KeepEyeContactingState()},
+            { EnemyState.Dead, new DeadState() }
+>>>>>>> Stashed changes
 =======
             { EnemyState.KeepEyeContacting, new KeepEyeContactingState()},
             { EnemyState.Dead, new DeadState() }

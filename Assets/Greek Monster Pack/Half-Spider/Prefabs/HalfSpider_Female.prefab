@@ -7556,7 +7556,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1834218037554776369
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7573,7 +7573,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &5196844180594564362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7610,7 +7610,8 @@ MonoBehaviour:
     hairProfile: {fileID: 11400000, guid: 38d90429f993f31459d28c303d85445c, type: 2}
     beardProfile: {fileID: 0}
     eyebrowProfile: {fileID: 11400000, guid: 4bb6560e8d1101d458ffbf2a7aebaeff, type: 2}
-    hairMaterialProfile: {fileID: 11400000, guid: 892be67492b5d534bbd7503f6bbd7608, type: 2}
+    hairMaterialProfile: {fileID: 11400000, guid: 892be67492b5d534bbd7503f6bbd7608,
+      type: 2}
     parentageManager: {fileID: 5196844180594564360}
     hairGroup: {fileID: 541408860305369769}
     activeHairObject: {fileID: 4652249489104912364}
@@ -7640,7 +7641,8 @@ MonoBehaviour:
     - White
     hairMaterialIndex: 1
   eyeSettings:
-    eyeMaterialProfile: {fileID: 11400000, guid: 784edc8d59681974fb8f9ec475feff35, type: 2}
+    eyeMaterialProfile: {fileID: 11400000, guid: 784edc8d59681974fb8f9ec475feff35,
+      type: 2}
     eyeUsableMaterials:
     - Blue
     - Light Blue
@@ -14478,7 +14480,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8443698922373664723}
-  m_LocalRotation: {x: -0.6622257, y: -0.0000000017107664, z: -0.0000000024451812, w: 0.7493044}
+  m_LocalRotation: {x: -0.6622257, y: -0.0000000017107664, z: -0.0000000024451812,
+    w: 0.7493044}
   m_LocalPosition: {x: 8.881784e-18, y: -0.000572702, z: -0.00051842735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

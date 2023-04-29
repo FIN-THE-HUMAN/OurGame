@@ -31,7 +31,11 @@ public class HitState : AIState
             enemy.SetState(EnemyState.Attack);
         }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         else if (enemy.SeeTarget())
+=======
+        else if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
+>>>>>>> Stashed changes
 =======
         else if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
 >>>>>>> Stashed changes

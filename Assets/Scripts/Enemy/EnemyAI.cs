@@ -11,7 +11,11 @@ public class EnemyAI : MonoBehaviour
     public enum EnemyState
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting
+=======
+        Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting, Dead
+>>>>>>> Stashed changes
 =======
         Idle, Chase, Attack, Hit, Patroling, JustSpawned, Seek, KeepEyeContacting, Dead
 >>>>>>> Stashed changes
@@ -25,7 +29,10 @@ public class EnemyAI : MonoBehaviour
     [Range(0, 360)]
     [SerializeField] private float _visionAngle = 180; //Angle of the cone vision
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     [SerializeField] private bool _mustPatrol;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     [SerializeField] private float _standartReachDistance = 2;
@@ -40,6 +47,10 @@ public class EnemyAI : MonoBehaviour
     public const float RUN_SPEED = 8;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -74,11 +85,14 @@ public class EnemyAI : MonoBehaviour
         _target = FindObjectOfType<CharacterController>().transform;
         _enemyAIStateSystem = FindObjectOfType<EnemyAIStateSystem>();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         if (_currentState == EnemyState.JustSpawned) return;
 
         if (_mustPatrol)
 =======
+=======
+>>>>>>> Stashed changes
         if (_enemyAIStateSystem == null)
         {
             throw new InvalidOperationException("На сцене отсутствует система контроля состояний врага");
@@ -87,6 +101,9 @@ public class EnemyAI : MonoBehaviour
         if (_currentState == EnemyState.JustSpawned) return;
 
         if (MustPatrol)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         {
             _currentState = EnemyState.Patroling;
@@ -368,7 +385,10 @@ public class EnemyAI : MonoBehaviour
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     public bool PlayerInVisionDistanceRadious()
     {
         if (Vector3.Distance(transform.position, _target.transform.position) < _visionDistance)
@@ -379,6 +399,9 @@ public class EnemyAI : MonoBehaviour
         return false;
     }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     private void OnDrawGizmosSelected()
     {

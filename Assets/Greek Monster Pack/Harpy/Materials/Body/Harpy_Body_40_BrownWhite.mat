@@ -10,15 +10,16 @@ Material:
   m_Name: Harpy_Body_40_BrownWhite
   m_Shader: {fileID: 4800000, guid: b7839dad95683814aa64166edc107ae2, type: 3}
   m_ValidKeywords:
+  - _ALPHATEST_ON
   - _EMISSION
   m_InvalidKeywords:
   - _FLIPBOOKBLENDING_OFF
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Opaque
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - GRABPASS
   m_SavedProperties:

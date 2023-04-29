@@ -15,6 +15,7 @@ public class IdleState : AIState
     public override void OnStateUpdate(EnemyAI enemy)
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (enemy.SeeTarget())
         {
             if (enemy.CanReachTarget())
@@ -27,6 +28,10 @@ public class IdleState : AIState
 =======
         if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
         {
+=======
+        if (enemy.PlayerInVisionDistanceRadious() /*enemy.SeeTarget()*/)
+        {
+>>>>>>> Stashed changes
             //Debug.Log("PlayerInVisionDistanceRadious");
             if (enemy.CanReachTarget())
             {
@@ -36,6 +41,9 @@ public class IdleState : AIState
             //else
                 //enemy.SetState(EnemyState.KeepEyeContacting);
                 //enemy.ReturnToUsualState();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         }
